@@ -1,0 +1,183 @@
+// Media query for mobile content (portrait)
+@media screen and (max-width: 500px) {
+
+    // Home content
+    .home_container {
+        margin: auto 17.5%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+
+        .home_text_container {
+            gap: 1rem;
+            width: 100%;
+
+            h4 {
+                text-indent: 0rem;
+                font-size: .925rem;
+                padding: .4rem 1rem;
+                margin-bottom: .5rem;
+            }
+
+            .prof_titles_container {
+                gap: .75rem;
+
+                h2 {
+                    font-size: 1.26rem;
+                    letter-spacing: .03rem;
+                }
+
+                h2:nth-of-type(2) {
+                    align-self: flex-end;
+                }
+            }
+
+            &>h6 {
+                font-size: .9rem;
+                padding-top: .85rem;
+            }
+
+            .home_about_link_container {
+                margin-top: .25rem;
+                padding: .35rem .75rem;
+                margin-left: 0rem;
+
+                h6 {
+                    font-size: .9rem;
+                }
+
+                span {
+                    font-size: 1.075rem;
+                }
+            }
+        }
+
+        .home_picture_container {
+            width: 75%;
+        }
+    }
+}
+
+
+// Media queries for mobile content (landscape)
+@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
+
+    // Home content
+    .home_container {
+        margin: auto 17.5%;
+        margin-bottom: 7.5%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1.5rem;
+
+        .home_text_container {
+            gap: 1rem;
+            width: 100%;
+
+            h4 {
+                text-indent: .25rem;
+                font-size: 1.2rem;
+                padding: .4rem 1rem;
+                margin-bottom: .1rem;
+            }
+
+            .prof_titles_container {
+                gap: .75rem;
+
+                h2 {
+                    font-size: 1.8rem;
+                    letter-spacing: .06rem;
+                }
+
+                h2:nth-of-type(2) {
+                    align-self: center;
+                }
+            }
+
+            &>h6 {
+                font-size: 1.1rem;
+                padding-top: .85rem;
+            }
+
+            .home_about_link_container {
+                margin-top: .25rem;
+                padding: .35rem .75rem;
+                margin-left: 0rem;
+
+                h6 {
+                    font-size: 1.05rem;
+                }
+
+                span {
+                    font-size: 1.175rem;
+                }
+            }
+        }
+
+        .home_picture_container {
+            width: 40%;
+        }
+    }
+}
+
+
+// Media queries for tablet content (portrait)
+@media screen and (min-height: 651px) and (min-width: 700px) and (max-width: 1000px) {
+
+      // Home content
+      .home_container {
+        margin: auto 16%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2.5rem;
+
+        .home_text_container {
+            gap: 1.5rem;
+            width: 100%;
+
+            h4 {
+                text-indent: .25rem;
+                font-size: 1.35rem;
+                padding: .5rem 1.1rem;
+                margin-bottom: .1rem;
+            }
+
+            .prof_titles_container {
+                gap: .75rem;
+
+                h2 {
+                    font-size: 2rem;
+                    letter-spacing: .075rem;
+                }
+
+                h2:nth-of-type(2) {
+                    align-self: center;
+                }
+            }
+
+            &>h6 {
+                font-size: 1.25rem;
+                padding-top: 1rem;
+            }
+
+            .home_about_link_container {
+                margin-top: .25rem;
+                padding: .5rem .9rem;
+                margin-left: 0rem;
+
+                h6 {
+                    // margin: 0;
+                    font-size: 1.2rem;
+                }
+
+                span {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+
+        .home_picture_container {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,230 @@
+// Media query for mobile content (portrait)
+@media screen and (max-width: 500px) {
+
+    // Projects content
+    .projects_container {
+        margin: auto 17.5%;
+        margin-bottom: 7.5%;
+
+        .projects_main_title {
+
+            h2 {
+                font-size: 2.15rem;
+            }
+        }
+
+        .projects_content_container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+
+
+            // Single project content
+            .single_project_container {
+
+                .single_project_description_container {
+                    padding: .75rem 1.1rem;
+
+                    h4 {
+                        font-size: 1.025rem;
+                        letter-spacing: .025rem;
+                    }
+
+                    &>p {
+                        line-height: 1.05rem;
+                        letter-spacing: .02rem;
+                        font-size: .85rem;
+                    }
+
+                    .single_project_anchors_container {
+
+                        .single_project_website_anchor {
+                            padding: .1rem .65rem;
+
+                            p {
+                                font-size: .85rem;
+                            }
+
+                            p:nth-of-type(2) {
+                                font-size: 1rem;
+                            }
+
+                            &:hover {
+                                background-color: var(--app-primary-color);
+                            }
+                        }
+
+                        .single_project_code_anchor {
+                            padding: .4rem;
+
+                            i {
+                                font-size: 1rem;
+                            }
+
+                            &:hover {
+                                background-color: var(--app-primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Media queries for mobile content (landscape)
+@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
+
+    // Projects content
+    .projects_container {
+        margin: auto 17.5%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+
+        .projects_main_title {
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .projects_content_container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.65rem;
+
+
+            // Single project content
+            .single_project_container {
+                flex: 0 0 45%;
+
+                .single_project_description_container {
+                    padding: .75rem 1.1rem;
+
+                    h4 {
+                        font-size: 1rem;
+                        letter-spacing: .02rem;
+                    }
+
+                    &>p {
+                        line-height: 1.0375rem;
+                        letter-spacing: .015rem;
+                        font-size: .8rem;
+                    }
+
+                    .single_project_anchors_container {
+
+                        .single_project_website_anchor {
+                            padding: .1rem .65rem;
+
+                            p {
+                                font-size: .825rem;
+                            }
+
+                            p:nth-of-type(2) {
+                                font-size: .975rem;
+                            }
+
+                            &:hover {
+                                background-color: var(--app-primary-color);
+                            }
+                        }
+
+                        .single_project_code_anchor {
+                            padding: .4rem;
+
+                            i {
+                                font-size: .95rem;
+                            }
+
+                            &:hover {
+                                background-color: var(--app-primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Media queries for tablet content (portrait)
+@media screen and (min-height: 651px) and (min-width: 700px) and (max-width: 1000px) {
+
+    // Projects content
+    .projects_container {
+        margin: auto 16%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+
+        .projects_main_title {
+
+            h2 {
+                font-size: 2.15rem;
+            }
+        }
+
+        .projects_content_container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.75rem;
+
+            // Single project content
+            .single_project_container {
+                flex: 0 0 45%;
+
+                .single_project_description_container {
+                    padding: .5rem 1.1rem;
+
+                    h4 {
+                        font-size: .925rem;
+                        letter-spacing: .02rem;
+                    }
+
+                    &>p {
+                        line-height: 1.0275rem;
+                        letter-spacing: .015rem;
+                        font-size: .75rem;
+                    }
+
+                    .single_project_anchors_container {
+
+                        .single_project_website_anchor {
+                            padding: .1rem .65rem;
+
+                            p {
+                                font-size: .775rem;
+                            }
+
+                            p:nth-of-type(2) {
+                                font-size: .9rem;
+                            }
+
+                            &:hover {
+                                background-color: var(--app-primary-color);
+                            }
+                        }
+
+                        .single_project_code_anchor {
+                            padding: .4rem;
+
+                            i {
+                                font-size: .875rem;
+                            }
+
+                            &:hover {
+                                background-color: var(--app-primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

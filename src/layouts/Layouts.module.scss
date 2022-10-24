@@ -1,0 +1,355 @@
+// Variables
+:root {
+    --app-bg-color2: rgb(232, 236, 237);
+    --app-bg-color2-transparent: rgba(232, 236, 237, 0.835);
+    --footer-bg-color: rgb(18, 18, 18);
+    --footer-color: rgb(231, 235, 235);
+    --app-primary-color: rgb(49, 112, 142);
+    --app-primary-color-transparent4: rgba(49, 112, 142, .75);
+    --app-primary-color-transparent: rgba(49, 112, 142, .5);
+    --app-primary-color-transparent2: rgba(49, 112, 142, .25);
+    --app-primary-color-transparent3: rgba(49, 112, 142, .15);
+    --app-secondary-color: rgba(104, 120, 100, 1);
+    --app-secondary-color-transparent: rgba(104, 120, 100, .5);
+    --app-intermediate-color: rgba(71, 157, 203, 1);
+    --app-intermediate-color-transparent: rgba(71, 157, 203, .7);
+    --app-intermediate-color-transparent3: rgba(71, 157, 203, .55);
+    --app-intermediate-color-transparent2: rgba(71, 157, 203, .35); 
+}
+
+.dark_mode {
+    --app-bg-color2: rgb(11, 12, 16);
+    --app-bg-color2-transparent: rgba(11, 12, 16, 0.87);
+    --footer-bg-color: rgb(18, 18, 18);
+    --footer-color: rgb(211, 215, 215);
+    --app-primary-color: rgb(143, 193, 227);
+    --app-primary-color-transparent4: rgba(143, 193, 227, .75);
+    --app-primary-color-transparent: rgba(143, 193, 227, .5);
+    --app-primary-color-transparent2: rgba(143, 193, 227, .25);
+    --app-primary-color-transparent3: rgba(143, 193, 227, .15);
+    --app-secondary-color: rgba(104, 120, 100, 1);
+    --app-secondary-color-transparent: rgba(104, 120, 100, .5);
+    --app-intermediate-color: rgba(49, 123, 142, 1);
+    --app-intermediate-color-transparent: rgba(49, 123, 142, .7);
+    --app-intermediate-color-transparent3: rgba(49, 123, 142, .55);
+    --app-intermediate-color-transparent2: rgba(49, 123, 142, .35);
+}
+
+
+// App content
+.app_container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url("../assets/images/background.jpg");
+        background-color: var(--app-bg-color2-transparent);
+        background-size: cover;
+        opacity: .75;
+        z-index: -2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--app-bg-color2-transparent);
+        z-index: -2;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
+// Navbar content
+header {
+
+    .navbar {
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 6rem 1.5rem 4rem;
+
+        .navbar_title_link {
+            text-decoration: none;
+
+            .navbar_title_container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .5rem;
+
+                .navbar_title_logo_container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                    border: 1rem solid var(--app-primary-color);
+                    padding: 1.4rem;
+                    background-color: var(--app-primary-color);
+                    margin: 0;
+                    transition: all .2s ease-in-out;
+
+                    .navbar_title_logo {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .25rem;
+                        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                        padding: 2rem;
+                        height: 4.25rem;
+                        width: 4.25rem;
+                        background-color: var(--app-bg-color2-transparent);
+                        transition: all .2s ease-in-out;
+                        
+                        i {
+                            z-index: 1;
+                            color: var(--app-primary-color);
+                            font-weight: 900;
+                            font-size: 2.1rem;
+                            transition: all .2s ease-in-out;
+                        }
+
+                        .navbar_title_polygon {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            clip-path: polygon(95% 6%, 12% 21%, 16% 94%, 95% 78%, 95% 88%, 16% 96%, 16% 94%, 12% 21%, 12% 10%);
+                            background-color: var(--app-intermediate-color);
+                            z-index: 0;
+                            opacity: .75;
+                            transition: all .2s ease-in-out;
+                        }
+                    }
+                }
+
+                h4 {
+                    color: var(--app-intermediate-color);
+                    display: none;
+                    margin: 0;
+                }
+            }
+        }
+
+        .navbar_links_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+
+            .navbar_link {
+                color: var(--app-primary-color-transparent);
+                padding: .5rem;
+                border-radius: .25rem;
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-weight: 700;
+                transition: all .2s ease;
+
+                &:hover {
+                    translate: 0% 6.5%;
+                }
+            }
+
+            .navbar_link_active {
+                color: var(--app-primary-color);
+                font-size: 1.25rem;
+                translate: 0% 7.5%;
+                font-weight: 900;
+
+                &:hover {
+                    translate: 0% 7.5%;
+                }
+            }
+
+            // Dark mode content
+            .dark_mode_button_container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.30rem;
+                height: 2.30rem;
+                padding: .5rem;
+                margin-left: 2.5rem;
+                border-radius: 2rem;
+                cursor: pointer;
+                transition: all .2s ease;
+
+                &:hover {
+                    translate: 0% -12.5%;
+
+                    i {
+                        color: var(--app-primary-color);
+                    }
+                }
+
+                i {
+                    color: var(--app-intermediate-color);
+                    font-size: 1.45rem;
+                }
+            }
+        }
+
+        .navbar_mobile_buttons_container {
+            display: none;
+        }
+    }
+}
+
+
+// Footer container
+.footer_container {
+    margin-top: auto;
+    width: 100%;
+    height: 5%;
+    background-color: var(--footer-bg-color);
+    border-top-left-radius: .15rem;
+    border-top-right-radius: .15rem;
+    color: var(--footer-color);
+    padding: .125rem 1.5rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    .footer_text {
+
+        p {
+            margin: 0;
+            letter-spacing: .025rem;
+            word-spacing: .05rem;
+            font-size: .85rem;
+        }
+    }
+
+    .footer_icon_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .75rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--footer-color);
+            width: 2rem;
+            height: 2rem;
+            padding: 1rem;
+            transition: all .2s ease-in-out;
+            border-radius: 2rem;
+            text-decoration: none;
+
+            i {
+                font-size: 1.25rem;
+                color: var(--footer-color);
+                transition: all .2s ease;
+            }
+
+            &:hover {
+
+                i {
+                    color: var(--app-primary-color);
+                    translate: 0 -12.5%;
+                }
+            }
+        }
+    }
+}
+
+
+// Vertical email button content
+.vertical_email_container {
+    position: fixed;
+    bottom: 17.5%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    writing-mode: vertical-rl;
+    
+    a {
+        text-decoration: none;
+        color: var(--app-secondary-color);
+        cursor: pointer;
+        font-family: 'Overpass', sans-serif;
+        font-size: .925rem;
+        letter-spacing: .115rem;
+        transition: all .2s ease;
+
+        &:hover {
+            color: var(--app-primary-color);
+        }
+
+        &::after {
+            content: "";
+            background-color: var(--app-secondary-color);
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            height: 85%;
+            width: .1rem;
+            translate: -50% 0%;
+            z-index: -1;
+        }
+    }
+}
+
+
+// Vertical icon bar content
+.icon_vertical_bar_container {
+    position: fixed;
+    bottom: 17.5%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    a {
+        text-decoration: none;
+        color: var(--app-secondary-color);
+        cursor: pointer;
+        font-size: 1.25rem;
+        letter-spacing: .115rem;
+        transition: all .2s ease;
+
+        &:hover {
+            color: var(--app-primary-color);
+            translate: 0 -7.5%;
+        }
+    }
+
+    &::after {
+            content: "";
+            background-color: var(--app-secondary-color);
+            position: absolute;
+            bottom: -270%;
+            left: 50%;
+            height: 220.5%;
+            width: .1rem;
+            translate: -150% 0%;
+            z-index: -1;
+        }
+}
+
+
+@import './media';

@@ -1,0 +1,43 @@
+// Error page content
+.errorpage_container {
+    margin: auto 25%;
+    padding: 1rem;
+    padding-top: 2rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--app-primary-color-transparent);
+    border-radius: 25%;
+    transition: all .2s ease-in-out;
+
+    img {
+        //height: fit-content;
+        border-radius: 25%;
+        height: 50vh;
+        width: fit-content;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .075rem;
+        word-spacing: .25rem;
+        font-size: 1.25rem;
+    }
+
+    .error_page_link {
+        padding: 1rem;
+        color: var(--app-primary-color);
+        line-height: 1rem;
+        letter-spacing: .075rem;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}
+
+
+@import './media';

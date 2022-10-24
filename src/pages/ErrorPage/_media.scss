@@ -1,0 +1,101 @@
+// Media query for mobile content (portrait)
+@media screen and (max-width: 500px) {
+
+    // Error page content
+    .errorpage_container {
+        margin: auto 17.5%;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        img {
+            border-radius: 2rem;
+            width: 125%;
+            height: fit-content;
+        }
+
+        p {
+            word-spacing: .15rem;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        .error_page_link {
+            text-align: center;
+            padding: .65rem;
+            line-height: 1.15rem;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}
+
+
+// Media queries for mobile content (landscape)
+@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
+
+    // Error page content
+    .errorpage_container {
+        margin: auto 17.5%;
+        margin-bottom: 7.5%;
+        padding: 1rem;
+        border-radius: 2rem;
+
+        img {
+            border-radius: 2rem;
+            width: 52.5%;
+            height: fit-content;
+        }
+
+        p {
+            word-spacing: .15rem;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        .error_page_link {
+            text-align: center;
+            padding: .65rem;
+            line-height: 1.15rem;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}
+
+
+// Media queries for tablet content (portrait)
+@media screen and (min-height: 651px) and (min-width: 700px) and (max-width: 1000px) {
+
+    // Error page content
+    .errorpage_container {
+        margin: auto 16%;
+        padding: 1.25rem;
+        border-radius: 2rem;
+
+        img {
+            border-radius: 2rem;
+            width: 75%;
+            height: fit-content;
+        }
+
+        p {
+            word-spacing: .15rem;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .error_page_link {
+            text-align: center;
+            padding: .75rem;
+            line-height: 1.15rem;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}
