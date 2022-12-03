@@ -64,29 +64,31 @@
 
     // Home content
     .home_container {
-        margin: auto 17.5%;
+        //margin: auto 17.5%;
+        margin: auto 8.5%;
         margin-bottom: 7.5%;
-        flex-direction: column-reverse;
+        //flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 1.25rem;
 
         .home_text_container {
-            gap: 1rem;
+            gap: .65rem;
             width: 100%;
 
             h4 {
                 text-indent: .25rem;
-                font-size: 1.2rem;
-                padding: .4rem 1rem;
+                font-size: 1.05rem;
+                padding: .3rem 1rem;
                 margin-bottom: .1rem;
             }
 
             .prof_titles_container {
-                gap: .75rem;
+                gap: .25rem;
 
                 h2 {
-                    font-size: 1.8rem;
-                    letter-spacing: .06rem;
+                    font-size: 1.55rem;
+                    letter-spacing: .03rem;
                 }
 
                 h2:nth-of-type(2) {
@@ -95,21 +97,22 @@
             }
 
             &>h6 {
-                font-size: 1.1rem;
-                padding-top: .85rem;
+                font-size: .9rem;
+                padding-top: .5rem;
             }
 
             .home_about_link_container {
                 margin-top: .25rem;
-                padding: .35rem .75rem;
+                padding: .2rem .75rem;
                 margin-left: 0rem;
 
                 h6 {
-                    font-size: 1.05rem;
+                    font-size: .85rem;
+                    letter-spacing: .025rem;
                 }
 
                 span {
-                    font-size: 1.175rem;
+                    font-size: .95rem;
                 }
             }
         }

@@ -210,6 +210,12 @@
                     font-size: 1rem;
                 }
             }
+
+            a:nth-of-type(1) {
+                i {
+                    font-size: .95rem;
+                }
+            }
         }
     }
 
@@ -369,6 +375,12 @@
 
                 i {
                     font-size: .95rem;
+                }
+            }
+
+            a:nth-of-type(1) {
+                i {
+                    font-size: .875rem;
                 }
             }
         }
@@ -532,6 +544,12 @@
 
                 i {
                     font-size: 1rem;
+                }
+            }
+
+            a:nth-of-type(1) {
+                i {
+                    font-size: .925rem;
                 }
             }
         }

@@ -14,7 +14,7 @@ export default function SingleProject({ data, styles }) {
                         <p>➜</p>
                     </a>
                     <Tooltip title="Check the code" placement="bottom">
-                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className={styles.single_project_code_anchor}>
+                    <a href={data.codeUrl} target="_blank" rel="noreferrer" className={styles.single_project_code_anchor}>
                         <i className="fa-solid fa-code"></i>
                     </a>
                     </Tooltip>

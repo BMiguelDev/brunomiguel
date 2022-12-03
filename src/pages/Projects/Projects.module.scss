@@ -35,18 +35,24 @@
     }
 
     .projects_content_container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
-
 
         // Single project content
         .single_project_container {
             background-color: var(--app-intermediate-color-transparent3);
             border-radius: 1rem;
             display: flex;
+            align-self: center;
+            justify-self: center;
             position: relative;
-            width: 100%;
+            //width: 100%;
+            width: 30%;
             overflow: hidden;
 
             img {

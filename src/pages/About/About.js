@@ -25,7 +25,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <Link to='/projects' className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>3+</p>
+                <p className={styles.description_item_text_title}>5+</p>
                 <p className={styles.description_item_text_explanation}>
                   Projects Completed
                 </p>
@@ -61,8 +61,16 @@ export default function About() {
               <img src={require("../../assets/images/javascript_logo2.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container}>
+              <p>Typescript</p>
+              <img src={require("../../assets/images/typescript_logo.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
               <p>React</p>
               <img src={require("../../assets/images/react_logo.svg.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              <p>Sass</p>
+              <img src={require("../../assets/images/sass_logo.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container}>
               <p>Git</p>
