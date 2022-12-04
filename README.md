@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-#### This is a portfolio app displaying content about me, my skills and my work.
+#### This is a portfolio website displaying content about me, my skills and my work.
 
 #### Developed using React and Sass
 
