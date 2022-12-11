@@ -33,7 +33,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <a href="#about_skills" className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>7+</p>
+                <p className={styles.description_item_text_title}>11+</p>
                 <p className={styles.description_item_text_explanation}>
                   Tecnologies Used
                 </p>
@@ -69,8 +69,25 @@ export default function About() {
               <img src={require("../../assets/images/react_logo.svg.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container}>
+              <p>Redux Toolkit</p>
+              <img src={require("../../assets/images/redux_toolkit.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
               <p>Sass</p>
               <img src={require("../../assets/images/sass_logo.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              {/* <p>React Testing Library</p> */}
+              <p>RTL</p>
+              <img src={require("../../assets/images/react_testing_library_logo.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              <p>Jest</p>
+              <img src={require("../../assets/images/jest_logo.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              <p>Cypress</p>
+              <img src={require("../../assets/images/cypress_logo1.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container}>
               <p>Git</p>
