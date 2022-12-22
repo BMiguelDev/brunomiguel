@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { createContext, useRef, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import styles from './Layouts.module.scss';
@@ -6,6 +6,8 @@ import Navbar from "./Navbar"
 import Footer from './Footer';
 import EmailVerticalButton from './EmailVerticalButton';
 import IconVerticalBar from './IconVerticalBar';
+
+export const DarkModeContext = createContext(true);
 
 
 export default function PageLayout() {
@@ -37,7 +39,10 @@ export default function PageLayout() {
         handleBurgerMenuToggle={handleBurgerMenuToggle}
         burgerMenuRef={burgerMenuRef}
       />
-      <Outlet />
+      <DarkModeContext.Provider value={isDarkMode} /*value={moodsState}*/>
+        <Outlet />
+      </DarkModeContext.Provider>
+      {/* <Outlet /> */}
       <Footer />
       <IconVerticalBar />
       <EmailVerticalButton />

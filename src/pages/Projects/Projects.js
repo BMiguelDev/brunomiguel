@@ -1,6 +1,5 @@
 import styles from './Projects.module.scss';
 import ProjectsData from '../../data/ProjectsData';
-
 import SingleProject from './SingleProject';
 
 export default function Projects() {

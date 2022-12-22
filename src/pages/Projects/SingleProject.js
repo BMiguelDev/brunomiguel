@@ -1,10 +1,17 @@
+import { useContext } from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 
+import { DarkModeContext } from "../../layouts/PageLayout";
+
+
 export default function SingleProject({ data, styles }) {
+
+    const isDarkMode = useContext(DarkModeContext);
+
     return (
         <div className={styles.single_project_container}>
             {/* <img src={require('../../assets/images/image.jpg')} alt=""/> */}
-            <img src={data.image} alt="" />
+            <img src={isDarkMode ? data.imageDark : data.image} alt="" />
             <div className={styles.single_project_description_container}>
                 <h4>{data.title}</h4>
                 <p>{data.description}</p>
