@@ -25,7 +25,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <Link to='/projects' className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>5+</p>
+                <p className={styles.description_item_text_title}>6+</p>
                 <p className={styles.description_item_text_explanation}>
                   Projects Completed
                 </p>
@@ -99,6 +99,17 @@ export default function About() {
       <div className={styles.about_timeline_container} id="about_timeline">
         <h3 className={styles.about_timeline_title}>My Timeline</h3>
         <div className={styles.about_timeline_content}>
+          <div className={styles.about_timeline_item}>
+            <div className={styles.timeline_icon}>
+              <i className="fa-solid fa-briefcase"></i>
+            </div>
+            <p className={styles.timeline_duration}>2022-2023</p>
+            <h5>Typescrit, React, Redux, Testing <span>courses</span></h5>
+            <p className={styles.timeline_description}>
+              <span>Front End specialization courses</span> in the areas of <span>Typescript, React, Redux, and Testing (Unit, Integration, and End to End)
+              </span> and development of projects using these technologies
+            </p>
+          </div>
           <div className={styles.about_timeline_item}>
             <div className={styles.timeline_icon}>
               <i className="fa-solid fa-briefcase"></i>

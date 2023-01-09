@@ -42,7 +42,6 @@ export default function PageLayout() {
       <DarkModeContext.Provider value={isDarkMode} /*value={moodsState}*/>
         <Outlet />
       </DarkModeContext.Provider>
-      {/* <Outlet /> */}
       <Footer />
       <IconVerticalBar />
       <EmailVerticalButton />
