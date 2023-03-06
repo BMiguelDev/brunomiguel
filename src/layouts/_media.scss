@@ -27,6 +27,7 @@ screen and (max-height: 300px) and (max-width: 300px) {
     }
 }
 
+
 // Mobile smartphone portrait screens
 // 550 height min, 350 width min
 @media screen and (min-width: 250px) and (max-width: 650px) and (min-height: 950px),
@@ -193,7 +194,7 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            font-size: 1.2rem;
+                            font-size: 1.1rem;
                             color: var(--app-bg-color2-transparent);
                         }
                     }
@@ -212,7 +213,7 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
                         justify-content: flex-start;
                         color: var(--app-primary-color-transparent);
                         padding: .15rem .35rem;
-                        font-size: .85rem;
+                        font-size: .8rem;
                         font-weight: 700;
                         width: 62.5%;
                         transition: all .125s ease;
@@ -220,7 +221,7 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
 
                     .navbar_link_active {
                         color: var(--app-primary-color);
-                        font-size: .95rem;
+                        font-size: .9rem;
                         translate: -25% 0;
                         font-weight: 900;
                     }

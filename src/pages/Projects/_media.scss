@@ -10,7 +10,7 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
         margin: auto 17.5%;
         height: 77.5%;
         margin-bottom: 7.5%;
-        gap: 1.75rem;
+        gap: 2rem;
         margin-top: 3%;
 
         .projects_main_title {
@@ -32,33 +32,37 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
 
             // Single project content
             .single_project_container {
-                width: 100%;
+                width: 95%;
+                position: relative;
 
                 .single_project_description_container {
-                    padding: .75rem 1.1rem;
+                    padding: .5rem .8rem;
 
                     h4 {
-                        font-size: 1.025rem;
+                        font-size: .925rem;
                         letter-spacing: .025rem;
                     }
 
                     &>p {
-                        line-height: 1.05rem;
+                        line-height: 1rem;
                         letter-spacing: .02rem;
-                        font-size: .85rem;
+                        font-size: .8rem;
                     }
 
                     .single_project_anchors_container {
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all .25s ease-in-out;
 
                         .single_project_website_anchor {
                             padding: .1rem .65rem;
 
                             p {
-                                font-size: .85rem;
+                                font-size: .725rem;
                             }
 
                             p:nth-of-type(2) {
-                                font-size: 1rem;
+                                font-size: .8rem;
                             }
 
                             &:hover {
@@ -67,15 +71,22 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
                         }
 
                         .single_project_code_anchor {
-                            padding: .4rem;
+                            padding: .275rem;
 
                             i {
-                                font-size: 1rem;
+                                font-size: .8rem;
                             }
 
                             &:hover {
                                 background-color: var(--app-primary-color);
                             }
+                        }
+                    }
+
+                    &:hover {
+                        .single_project_anchors_container {
+                            visibility: visible;
+                            opacity: 1;
                         }
                     }
                 }
