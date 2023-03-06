@@ -11,7 +11,7 @@ export default function About() {
         <div className={styles.about_description}>
           <div className={styles.about_description_text}>
             <p>I'm a <span>Software Engineer</span>, specializing in <span>Front End Web Development</span>, based in Porto, Portugal.</p>
-            <p>I create great user experiences and my skillset is mainly focused on <span>React</span>, and that's the area I'd like to work on the most.</p>
+            <p>I create great user experiences and my skillset is mainly focused on <span>React</span>, and that's the area I'm interested in the most.</p>
             <p>In the past, I have also worked in full stack development and <a href="https://repositorio-aberto.up.pt/handle/10216/136558" target="_blank" rel="noreferrer">data science projects</a>.</p>
           </div>
           <div className={styles.about_description_items_container}>

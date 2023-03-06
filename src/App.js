@@ -10,6 +10,8 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import About from './pages/About/About';
 
 
+// TODO:  - if images take time to load, add loading to whole page until all images are loaded and only then allow showing of page to user
+
 export default function App() {
 
   const location = useLocation();
