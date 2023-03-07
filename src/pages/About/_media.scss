@@ -1,9 +1,203 @@
+// Mobile smartphone portrait screens (small)
+//@media screen and (min-width: 250px) and (max-width: 300px) and (min-height: 300px) and (max-height: 950px),
+@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 500px) and (max-height: 1000px) {
+
+    // About content
+    .about_container {
+        margin: auto 17.5%;
+        margin-bottom: 7.5%;
+        height: 77.5%;
+        gap: 2rem;
+        margin-top: 3%;
+
+        .about_main_title {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // width: 100%;
+
+            h2 {
+                // margin: 0;
+                // color: var(--app-primary-color);
+                font-size: 1.75rem;
+                // text-transform: capitalize;
+                // letter-spacing: .25rem;
+                // position: relative;
+
+                &::after {
+                    bottom: -25%;
+                }
+
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     bottom: -50%;
+                //     left: 50%;
+                //     width: 35%;
+                //     height: 5%;
+                //     translate: -50% 0;
+                //     background-color: var(--app-secondary-color);
+                //     border-radius: 10rem;
+                // }
+            }
+        }
+
+        .about_content {
+            gap: 4rem;
+            flex-direction: column;
+            padding-top: 0rem;
+
+            .about_description {
+                gap: 2rem;
+
+                .about_description_text {
+
+                    p {
+                        line-height: 1.425rem;
+                        letter-spacing: .03rem;
+                        font-size: .9rem;
+
+                        span {
+                            font-size: .9rem;
+                            padding: 0 .05rem;
+                        }
+                    }
+                }
+
+                .about_description_items_container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .about_description_item {
+                        width: 40%;
+
+                        .description_item_text {
+                            padding: .5rem;
+                            gap: .25rem;
+
+                            .description_item_text_title {
+                                font-size: 1.05rem;
+                            }
+
+                            .description_item_text_explanation {
+                                font-size: .8rem;
+                                letter-spacing: .01rem;
+                            }
+                        }
+                    }
+                }
+
+                .about_description_btn {
+                    //justify-content: space-evenly;
+                    justify-content: center;
+                    gap: 7.5%;
+                    width: 72.5%;
+                    align-self: center;
+                    padding: .75rem 0;
+                    font-size: 1rem;
+
+                    .btn_text {
+                        padding: 0;
+                    }
+
+                    .btn_icon {
+                        padding: 0rem;
+                    }
+                }
+            }
+
+            .about_skills {
+                gap: 1rem;
+
+                .about_skills_title {
+                    font-size: 1.35rem;
+                }
+
+                .about_skills_technologies {
+                    gap: 1.25rem;
+                    //row-gap: 1.25rem;
+                    //column-gap: 1rem;
+
+                    .skills_technology_container {
+                        gap: .5rem;
+
+                        p {
+                            letter-spacing: .035rem;
+                            font-size: .8rem;
+                        }
+
+                        img {
+                            height: 47.5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .about_timeline_container {
+            gap: 1rem;
+
+            .about_timeline_title {
+                font-size: 1.35rem;
+                margin-bottom: .8rem;
+            }
+
+            .about_timeline_content {
+                padding-bottom: 0;
+
+                .about_timeline_item {
+                    gap: 1rem;
+                    padding-left: 1.5rem;
+                    padding-bottom: 2rem;
+
+                    .timeline_icon {
+                        left: -.675rem;
+                        width: 1.35rem;
+                        height: 1.35rem;
+
+                        i {
+                            font-size: .675rem;
+                        }
+                    }
+
+                    .timeline_duration {
+                        padding: .175rem .85rem;
+                        font-size: .75rem;
+                    }
+                    
+                    h5 {
+                        letter-spacing: .05rem;
+                        font-size: .925rem;
+                        display: inline-block;
+
+                        span {
+                            font-size: .85rem;
+                            letter-spacing: .025rem;
+                            padding-left: .35rem;
+                            padding-left: .35rem;
+                        }
+                    }
+                    
+                    .timeline_description {
+                        font-size: .8rem;
+                        letter-spacing: .025rem;
+                        line-height: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 // Mobile smartphone portrait screens
-// 550 height min, 350 width min
-@media screen and (min-width: 250px) and (max-width: 650px) and (min-height: 950px),
-screen and (min-width: 300px) and (max-width: 650px) and (min-height: 500px),
-screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and (max-height: 550px) {
-//@media screen and (max-width: 500px) {
+// 500 height min, 350 width min
+// @media screen and (min-width: 250px) and (max-width: 650px) and (min-height: 950px),
+// screen and (min-width: 300px) and (max-width: 650px) and (min-height: 500px),
+// screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and (max-height: 550px)
+@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) and (max-height: 1000px) {
 
     // About content
     .about_container {
@@ -56,7 +250,7 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
                 .about_description_text {
 
                     p {
-                        line-height: 1.475rem;
+                        line-height: 1.425rem;
                         letter-spacing: .03rem;
                         font-size: .9rem;
 
@@ -93,7 +287,9 @@ screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and
                 }
 
                 .about_description_btn {
-                    justify-content: space-evenly;
+                    //justify-content: space-evenly;
+                    justify-content: center;
+                    gap: 7.5%;
                     width: 72.5%;
                     align-self: center;
                     padding: .75rem 0;
