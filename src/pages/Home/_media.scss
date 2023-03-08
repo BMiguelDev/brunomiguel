@@ -1,35 +1,37 @@
-// Mobile smartphone portrait screens (small)
-//@media screen and (min-width: 250px) and (max-width: 300px) and (min-height: 300px) and (max-height: 950px),
-@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 500px) and (max-height: 1000px) {
+// Mobile smartphone portrait screens (very small)
+@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 300px) and (max-height: 400px) {
 
     // Home content
     .home_container {
-        margin: auto 17.5%;
+        margin: auto 15.5%;
         flex-direction: column-reverse;
         justify-content: center;
         //gap: 2rem;
-        gap: 4%;
+        gap: 2.5%;
         height: 77.5%;
 
         .home_text_container {
             //gap: 1rem;
-            gap: 5%;
+            gap: 3%;
             width: 100%;
-            flex: 3;
+            //flex: 3.5;
+            flex: unset;
+            //justify-content: center;
 
             h4 {
                 text-indent: 0rem;
-                font-size: .925rem;
-                padding: .4rem 1rem;
+                font-size: .875rem;
+                padding: .25rem .8rem;
                 margin-bottom: .5rem;
             }
 
             .prof_titles_container {
-                gap: .75rem;
+                gap: .6rem;
 
                 h2 {
-                    font-size: 1.26rem;
+                    font-size: 1.05rem;
                     letter-spacing: .03rem;
+                    line-height: 1.15rem;
                 }
 
                 h2:nth-of-type(2) {
@@ -39,27 +41,120 @@
 
             &>h6 {
                 font-size: .9rem;
-                padding-top: .85rem;
+                padding-top: .55rem;
+                line-height: .9rem;
             }
 
             .home_about_link_container {
                 margin-top: .25rem;
-                padding: .35rem .75rem;
+                padding: .225rem .625rem;
                 margin-left: 0rem;
 
                 h6 {
-                    font-size: .9rem;
+                    font-size: .775rem;
                 }
 
                 span {
-                    font-size: 1.075rem;
+                    font-size: .925rem;
                 }
             }
         }
 
         .home_picture_container {
-            flex: 2;
-            max-width: 90%;
+            //flex: 2;
+            flex: unset;
+            max-width: 100%;
+            //max-width: min(100%, calc(100vh/4));
+            //width: 100%;
+            //height: unset;
+            //max-height: unset;
+            //min-height: unset;
+            max-height: calc(100vw*.55);
+            aspect-ratio: 1/1;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+// Mobile smartphone portrait screens (small)
+//@media screen and (min-width: 250px) and (max-width: 300px) and (min-height: 300px) and (max-height: 950px),
+//@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 500px) and (max-height: 1000px)
+@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 400px) {
+
+    // Home content
+    .home_container {
+        margin: auto 15.5%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        //gap: 2rem;
+        gap: 2.5%;
+        height: 77.5%;
+
+        .home_text_container {
+            //gap: 1rem;
+            gap: 3%;
+            width: 100%;
+            //flex: 3.5;
+            flex: unset;
+            //justify-content: center;
+
+            h4 {
+                text-indent: 0rem;
+                font-size: .875rem;
+                padding: .25rem .8rem;
+                margin-bottom: .5rem;
+            }
+
+            .prof_titles_container {
+                gap: .6rem;
+
+                h2 {
+                    font-size: 1.05rem;
+                    letter-spacing: .03rem;
+                    line-height: 1.15rem;
+                }
+
+                h2:nth-of-type(2) {
+                    align-self: flex-end;
+                }
+            }
+
+            &>h6 {
+                font-size: .9rem;
+                padding-top: .55rem;
+                line-height: .9rem;
+            }
+
+            .home_about_link_container {
+                margin-top: .25rem;
+                padding: .225rem .625rem;
+                margin-left: 0rem;
+
+                h6 {
+                    font-size: .775rem;
+                }
+
+                span {
+                    font-size: .925rem;
+                }
+            }
+        }
+
+        .home_picture_container {
+            //flex: 2;
+            flex: unset;
+            max-width: 100%;
+            //max-width: min(100%, calc(100vh/4));
+            //width: 100%;
+            //height: unset;
+            //max-height: unset;
+            //min-height: unset;
+            max-height: calc(100vw*.55);
+            aspect-ratio: 1/1;
 
             img {
                 object-fit: cover;
