@@ -47,7 +47,6 @@
                 .about_description_items_container {
                     display: flex;
                     flex-wrap: wrap;
-                    //justify-content: center;
                     justify-content: space-around;
                     gap: .75rem;
                     row-gap: .5rem;
@@ -74,7 +73,6 @@
                 }
 
                 .about_description_btn {
-                    //justify-content: space-evenly;
                     justify-content: center;
                     gap: 7.5%;
                     width: 72.5%;
@@ -103,8 +101,6 @@
 
                 .about_skills_technologies {
                     gap: .75rem;
-                    //row-gap: 1.25rem;
-                    //column-gap: 1rem;
 
                     .skills_technology_container {
                         gap: .3rem;
@@ -180,65 +176,47 @@
 
 // Mobile smartphone portrait screens (small)
 //@media screen and (min-width: 250px) and (max-width: 300px) and (min-height: 300px) and (max-height: 950px),
-@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 500px) and (max-height: 1000px) {
+//@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 500px) and (max-height: 1000px) {
+@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 400px) {
 
     // About content
     .about_container {
-        margin: auto 17.5%;
+        margin: auto 15.5%;
         margin-bottom: 7.5%;
         height: 77.5%;
-        gap: 2rem;
+        gap: 1.5rem;
         margin-top: 3%;
 
         .about_main_title {
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            // width: 100%;
 
             h2 {
-                // margin: 0;
-                // color: var(--app-primary-color);
-                font-size: 1.75rem;
-                // text-transform: capitalize;
-                // letter-spacing: .25rem;
-                // position: relative;
-
+                font-size: 1.55rem;
+                letter-spacing: .225rem;
+                
                 &::after {
                     bottom: -25%;
                 }
-
-                // &::after {
-                //     content: '';
-                //     position: absolute;
-                //     bottom: -50%;
-                //     left: 50%;
-                //     width: 35%;
-                //     height: 5%;
-                //     translate: -50% 0;
-                //     background-color: var(--app-secondary-color);
-                //     border-radius: 10rem;
-                // }
             }
         }
 
         .about_content {
-            gap: 4rem;
+            gap: 2.5rem;
             flex-direction: column;
             padding-top: 0rem;
 
             .about_description {
-                gap: 2rem;
+                gap: 1.15rem;
 
                 .about_description_text {
+                    gap: .55rem;
 
                     p {
-                        line-height: 1.425rem;
+                        line-height: 1.0875rem;
                         letter-spacing: .03rem;
-                        font-size: .9rem;
+                        font-size: .825rem;
 
                         span {
-                            font-size: .9rem;
+                            font-size: .825rem;
                             padding: 0 .05rem;
                         }
                     }
@@ -247,69 +225,71 @@
                 .about_description_items_container {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 1rem;
+                    justify-content: space-around;
+                    gap: .75rem;
+                    row-gap: .6rem;
 
                     .about_description_item {
-                        width: 40%;
+                        width: 45%;
 
                         .description_item_text {
-                            padding: .5rem;
-                            gap: .25rem;
+                            padding: .275rem;
+                            gap: .275rem;
 
                             .description_item_text_title {
-                                font-size: 1.05rem;
+                                font-size: .925rem;
+                                letter-spacing: .04rem;
                             }
 
                             .description_item_text_explanation {
-                                font-size: .8rem;
+                                font-size: .715rem;
                                 letter-spacing: .01rem;
+                                line-height: .775rem;
                             }
                         }
                     }
                 }
 
                 .about_description_btn {
-                    //justify-content: space-evenly;
                     justify-content: center;
                     gap: 7.5%;
-                    width: 72.5%;
+                    width: 75%;
                     align-self: center;
-                    padding: .75rem 0;
+                    padding: .35rem 0;
                     font-size: 1rem;
 
                     .btn_text {
                         padding: 0;
+                        font-size: .825rem;
                     }
 
                     .btn_icon {
                         padding: 0rem;
+                        font-size: .885rem;
                     }
                 }
             }
 
             .about_skills {
-                gap: 1rem;
+                gap: .4rem;
 
                 .about_skills_title {
-                    font-size: 1.35rem;
+                    font-size: 1.125rem;
                 }
 
                 .about_skills_technologies {
-                    gap: 1.25rem;
-                    //row-gap: 1.25rem;
-                    //column-gap: 1rem;
+                    gap: .75rem;
 
                     .skills_technology_container {
-                        gap: .5rem;
+                        gap: .3rem;
 
                         p {
                             letter-spacing: .035rem;
-                            font-size: .8rem;
+                            font-size: .665rem;
                         }
 
                         img {
-                            height: 47.5px;
+                            height: 38.5px;
                         }
                     }
                 }
@@ -317,53 +297,53 @@
         }
 
         .about_timeline_container {
-            gap: 1rem;
+            gap: .85rem;
 
             .about_timeline_title {
-                font-size: 1.35rem;
-                margin-bottom: .8rem;
+                font-size: 1.125rem;
+                margin-bottom: .6rem;
             }
 
             .about_timeline_content {
                 padding-bottom: 0;
 
                 .about_timeline_item {
-                    gap: 1rem;
-                    padding-left: 1.5rem;
-                    padding-bottom: 2rem;
+                    gap: .725rem;
+                    padding-left: .95rem;
+                    padding-bottom: 1.6rem;
 
                     .timeline_icon {
-                        left: -.675rem;
-                        width: 1.35rem;
-                        height: 1.35rem;
+                        left: -.65rem;
+                        width: 1.25rem;
+                        height: 1.25rem;
 
                         i {
-                            font-size: .675rem;
+                            font-size: .635rem;
                         }
                     }
 
                     .timeline_duration {
-                        padding: .175rem .85rem;
-                        font-size: .75rem;
+                        padding: .115rem .75rem;
+                        font-size: .65rem;
                     }
                     
                     h5 {
-                        letter-spacing: .05rem;
-                        font-size: .925rem;
+                        letter-spacing: .04rem;
+                        font-size: .815rem;
                         display: inline-block;
+                        line-height: .95rem;
 
                         span {
-                            font-size: .85rem;
+                            font-size: .725rem;
                             letter-spacing: .025rem;
-                            padding-left: .35rem;
-                            padding-left: .35rem;
+                            padding-left: .3rem;
                         }
                     }
                     
                     .timeline_description {
-                        font-size: .8rem;
+                        font-size: .725rem;
                         letter-spacing: .025rem;
-                        line-height: 1.25rem;
+                        line-height: .9rem;
                     }
                 }
             }

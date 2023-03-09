@@ -296,16 +296,6 @@ screen and (max-height: 300px) and (max-width: 300px) {
     // App content
     .app_container {
         overflow: hidden;
-
-
-       // TODO: remove this
-       background-color: rgba(60, 60, 209, 0.455);
-
-       * {
-           outline: .01rem red solid;
-       }
-
-       outline: .01rem red solid;
     }
 
 
@@ -529,6 +519,7 @@ screen and (max-height: 300px) and (max-width: 300px) {
 
         a {
             font-size: .635rem;
+            letter-spacing: .045rem;
         }
     }
 
@@ -559,6 +550,15 @@ screen and (max-height: 300px) and (max-width: 300px) {
     // App content
     .app_container {
         overflow: hidden;
+
+       // TODO: remove this
+       background-color: rgba(60, 60, 209, 0.455);
+
+       * {
+           outline: .01rem red solid;
+       }
+
+       outline: .01rem red solid;
     }
 
 
@@ -575,19 +575,19 @@ screen and (max-height: 300px) and (max-width: 300px) {
                 .navbar_title_container {
 
                     .navbar_title_logo_container {
-                        height: 1.6rem;
-                        width: 1.6rem;
+                        height: 1.75rem;
+                        width: 1.75rem;
                         border: .7rem solid var(--app-primary-color);
-                        padding: .75rem;
+                        padding: .85rem;
 
                         .navbar_title_logo {
-                            padding: 1.25rem;
-                            height: 1.35rem;
-                            width: 1.35rem;
+                            padding: 1.35rem;
+                            height: 1.45rem;
+                            width: 1.45rem;
                             gap: .2rem;
 
                             i {
-                                font-size: 1.1rem;
+                                font-size: 1.2rem;
                             }
                         }
                     }
@@ -604,7 +604,6 @@ screen and (max-height: 300px) and (max-width: 300px) {
                 justify-content: flex-end;
                 gap: 2rem;
                 position: relative;
-                //margin-right: 0rem;
                 width: 35%;
 
                 // Dark mode content
@@ -612,14 +611,14 @@ screen and (max-height: 300px) and (max-width: 300px) {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    padding: .5rem;
+                    width: 1.675rem;
+                    height: 1.675rem;
+                    padding: .425rem;
                     border-radius: 2rem;
 
                     i {
                         color: var(--app-intermediate-color);
-                        font-size: 1.25rem;
+                        font-size: 1.15rem;
                     }
 
                     &:hover {
@@ -666,7 +665,7 @@ screen and (max-height: 300px) and (max-width: 300px) {
                 .navbar_burger_button_container {
                     color: var(--app-primary-color);
                     border: none;
-                    font-size: 1.35rem;
+                    font-size: 1.275rem;
                     background-color: inherit;
                 }
 
@@ -759,18 +758,18 @@ screen and (max-height: 300px) and (max-width: 300px) {
             gap: .75rem;
 
             a {
-                width: 1.1rem;
-                height: 1.1rem;
-                padding: .5rem;
+                width: 1rem;
+                height: 1rem;
+                padding: .4rem;
 
                 i {
-                    font-size: .85rem;
+                    font-size: .8rem;
                 }
             }
 
             a:nth-of-type(1) {
                 i {
-                    font-size: .765rem;
+                    font-size: .715rem;
                 }
             }
         }
@@ -783,6 +782,7 @@ screen and (max-height: 300px) and (max-width: 300px) {
 
         a {
             font-size: .725rem;
+            letter-spacing: .075rem;
         }
     }
 
@@ -799,7 +799,7 @@ screen and (max-height: 300px) and (max-width: 300px) {
 
     // Tooltip content
     .tooltip_container {
-        font-size: .7rem;
+        font-size: .725rem;
     }
 }
 
