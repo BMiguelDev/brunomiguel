@@ -103,7 +103,7 @@ export default function About() {
             <div className={styles.timeline_icon}>
               <i className="fa-solid fa-briefcase"></i>
             </div>
-            <p className={styles.timeline_duration}>2022-2023</p>
+            <p className={styles.timeline_duration}>2022 - 2023</p>
             <h5>Typescrit, React, Redux, Testing <span>courses</span></h5>
             <p className={styles.timeline_description}>
               <span>Front End specialization courses</span> in the areas of <span>Typescript, React, Redux, and Testing (Unit, Integration, and End to End)
@@ -114,7 +114,7 @@ export default function About() {
             <div className={styles.timeline_icon}>
               <i className="fa-solid fa-briefcase"></i>
             </div>
-            <p className={styles.timeline_duration}>2015-2021</p>
+            <p className={styles.timeline_duration}>2015 - 2021</p>
             <h5>BS + MS <span>in Informatics Engineering</span></h5>
             <p className={styles.timeline_description}>
               <span>Informatics and Computing Engineering Bachelor + Masters</span> degree, completed at the <span>Faculty of Engineering of the
@@ -125,7 +125,7 @@ export default function About() {
             <div className={styles.timeline_icon}>
               <i className="fa-solid fa-graduation-cap"></i>
             </div>
-            <p className={styles.timeline_duration}>2012-2015</p>
+            <p className={styles.timeline_duration}>2012 - 2015</p>
             <h5>Highschool Degree <span>in Science</span></h5>
             <p className={styles.timeline_description}>
               Highschool degree in the field of Sciences, at Boavista Highschool

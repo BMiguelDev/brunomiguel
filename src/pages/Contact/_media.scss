@@ -170,27 +170,27 @@
 }
 
 
-// Mobile smartphone portrait screens
+// Mobile smartphone portrait screens (normal)
 // 500 height min, 350 width min
 // @media screen and (min-width: 250px) and (max-width: 650px) and (min-height: 950px),
 // screen and (min-width: 300px) and (max-width: 650px) and (min-height: 500px),
 // screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and (max-height: 550px)
-@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) and (max-height: 1000px) {
+//@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) and (max-height: 1000px) {
+@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) {
 
     // Contact content
     .contact_container {
         margin: auto 17.5%;
         height: 77.5%;
         justify-content: flex-start;
-        //gap: 3rem;
-        //gap: unset;
-        gap: 10%;
+        gap: 8.5%;
 
         .contact_main_title {
 
             h2 {
-                font-size: 2rem;
-                
+                font-size: 1.75rem;
+                letter-spacing: .225rem;
+
                 &::after {
                     bottom: -35%;
                 }
@@ -206,7 +206,7 @@
                 align-items: initial;
     
                 &>p {
-                    font-size: .9rem;
+                    font-size: .925rem;
                     letter-spacing: .025rem;
                     line-height: 1.2rem;
                 }
@@ -231,13 +231,11 @@
                 gap: 1.5rem;
                 
                 p {
-                    font-size: .95rem;
+                    font-size: .925rem;
                 }
     
                 .contact_alternatives_anchors {
-                    //flex-direction: column;
                     justify-content: space-evenly;
-                    //gap: 1.4rem;
     
                     a {
                         gap: .6rem;
