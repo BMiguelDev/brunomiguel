@@ -799,7 +799,196 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 }
 
 
-// Media queries for mobile content (landscape)
+// Mobile smartphone landscape screens (low height)
+@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 500px) {
+
+    //Navbar content
+    header {
+        height: unset;
+        //height: 18.5%;
+
+        .navbar {
+            // padding: 1rem 1rem 1.5rem 1.25rem;
+            padding: .25rem 1rem;
+
+            .navbar_title_link {
+
+                .navbar_title_container {
+
+                    .navbar_title_logo_container {
+                        height: 1.2rem;
+                        width: 1.2rem;
+                        border: .7rem solid var(--app-primary-color);
+                        padding: .5rem;
+
+                        .navbar_title_logo {
+                            padding: 1.05rem;
+                            height: 1rem;
+                            width: 1rem;
+                            gap: .175rem;
+
+                            i {
+                                font-size: .875rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar_links_container {
+                gap: .8rem;
+
+                .navbar_link {
+                    padding: .35rem;
+                    font-size: .7rem;
+
+                    &:hover {
+                        translate: 0% 0%;
+                    }
+                }
+
+                .navbar_link_active {
+                    font-size: .85rem;
+
+                    &:hover {
+                        translate: 0% 7.5%;
+                    }
+                }
+
+                // Dark mode content
+                .dark_mode_button_container {
+                    width: 1.15rem;
+                    height: 1.15rem;
+                    padding: .5rem;
+                    margin-left: 1rem;
+
+                    i {
+                        color: var(--app-intermediate-color);
+                        font-size: .9rem;
+                    }
+
+                    &:hover {
+                        translate: 0% 0%;
+                        animation: 0.25s buttonJumpandLand;
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes buttonJumpandLand {
+                            0% {
+                                translate: 0% 0%;
+                            }
+
+                            50% {
+                                translate: 0% -12.5%;
+                            }
+
+                            100% {
+                                translate: 0% 0%;
+                            }
+                        }
+
+                        i {
+                            color: var(--app-intermediate-color);
+                            animation: 0.2s colorBlink;
+                            animation-timing-function: ease;
+
+                            @keyframes colorBlink {
+                                0% {
+                                    color: var(--app-intermediate-color);
+                                }
+
+                                50% {
+
+                                    color: var(--app-primary-color);
+
+                                }
+
+                                100% {
+                                    color: var(--app-intermediate-color);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Footer container
+    .footer_container {
+        padding: .1rem 1rem;
+        height: 5%;
+
+        .footer_text {
+
+            p {
+                letter-spacing: .025rem;
+                word-spacing: .05rem;
+                font-size: .5rem;
+            }
+        }
+
+        .footer_icon_container {
+            gap: .75rem;
+
+            a {
+                width: .65rem;
+                height: .65rem;
+                padding: .15rem;
+
+                i {
+                    font-size: .575rem;
+                }
+            }
+
+            a:nth-of-type(1) {
+                i {
+                    font-size: .525rem;
+                }
+            }
+        }
+    }
+
+
+    // Vertical email button content
+    .vertical_email_container {
+        bottom: 17%;
+
+        a {
+            font-size: .535rem;
+            letter-spacing: .0115rem;
+
+            &::after {
+                bottom: -95%;
+            }
+        }
+    }
+
+
+    // Vertical icon bar content
+    .icon_vertical_bar_container {
+        bottom: 17%;
+        gap: .75rem;
+
+        a {
+            font-size: .675rem;
+            letter-spacing: .15rem;
+        }
+
+        &::after {
+            bottom: -245%;
+        }
+    }
+
+
+    // Tooltip content
+    .tooltip_container {
+        font-size: .6rem;
+    }
+}
+
+
+// Mobile smartphone landscape screens
 //@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
 @media screen and (min-height: 350px) and (max-height: 500px) and (min-width: 500px),
 screen and (min-height: 500px) and (max-height: 550px) and (min-width: 550px),
