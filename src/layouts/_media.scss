@@ -29,8 +29,7 @@ screen and (max-height: 300px) and (max-width: 300px) {
 
 
 // Mobile smartphone portrait screens (very small)
-@media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 300px) and (max-height: 400px),
-screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and (max-height: 400px),
+@media screen and (min-width: 250px) and (max-width: 400px) and (min-height: 300px) and (max-height: 400px),
 screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and (max-height: 400px) {
 
     // App content
@@ -292,9 +291,7 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
 
 // Mobile smartphone portrait screens (small)
 @media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 400px),
-screen and (min-width: 350px) and (max-width: 400px) and (min-height: 400px) and (max-height: 500px),
-screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and (max-height: 500px),
-screen and (min-width: 400px) and (max-width: 450px) and (min-height: 400px) and (max-height: 450px),
+screen and (min-width: 350px) and (max-width: 450px) and (min-height: 400px) and (max-height: 500px),
 screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and (max-height: 500px) {
 
     // App content
@@ -808,9 +805,269 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
 }
 
 
-// Mobile smartphone landscape screens (low height)
-@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 500px),
-screen and (min-height: 250px) and (max-height: 350px) and (min-width: 400px) and (max-width: 500px) {
+// Mobile smartphone landscape screens (very small)
+@media screen and (min-width: 300px) and (max-width: 400px) and (min-height: 250px) and (max-height: 300px) {
+
+    // App content
+    .app_container {
+        overflow: hidden;
+    }
+
+
+    //Navbar content
+    header {
+        //height: 18%;
+        height: unset;
+        
+        .navbar {
+            padding: 1% 6% 1.5% 6%;
+
+            .navbar_title_link {
+
+                .navbar_title_container {
+
+                    .navbar_title_logo_container {
+                        height: 1.05rem;
+                        width: 1.05rem;
+                        border: .7rem solid var(--app-primary-color);
+                        padding: .425rem;
+
+                        .navbar_title_logo {
+                            padding: .965rem;
+                            height: .95rem;
+                            width: .95rem;
+                            gap: .185rem;
+
+                            i {
+                                font-size: .825rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar_links_container {
+                display: none;
+            }
+
+            .navbar_mobile_buttons_container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 1.35rem;
+                position: relative;
+                //margin-right: 0rem;
+                width: 35%;
+
+                // Dark mode content
+                .dark_mode_button_container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1.1rem;
+                    height: 1.1rem;
+                    padding: .225rem;
+                    border-radius: 2rem;
+
+                    i {
+                        color: var(--app-intermediate-color);
+                        font-size: .875rem;
+                    }
+
+                    &:hover {
+                        animation: 0.25s buttonJumpandLand;
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes buttonJumpandLand {
+                            0% {
+                                translate: 0% 0%;
+                            }
+
+                            50% {
+                                translate: 0% -12.5%;
+                            }
+
+                            100% {
+                                translate: 0% 0%;
+                            }
+                        }
+
+                        i {
+                            animation: 0.2s colorBlink;
+                            animation-timing-function: ease;
+
+                            @keyframes colorBlink {
+                                0% {
+                                    color: var(--app-intermediate-color);
+                                }
+
+                                50% {
+
+                                    color: var(--app-primary-color);
+
+                                }
+
+                                100% {
+                                    color: var(--app-intermediate-color);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .navbar_burger_button_container {
+                    color: var(--app-primary-color);
+                    border: none;
+                    font-size: .975rem;
+                    background-color: inherit;
+                }
+
+                .navbar_burger_menu_container {
+                    position: absolute;
+                    left: 12%;
+                    top: -65%;
+                    height : fit-content;
+                    width : 110%;
+                    opacity: 1;
+                    visibility: visible;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: .5rem;
+                    padding: 1.15rem .5rem .5rem .5rem;
+                    transition: all .25s ease;
+                    background-color: var(--app-intermediate-color);
+                    border-radius: .5rem;
+                    z-index: 1;
+
+                    .burger_menu_button_close {
+                        padding: .2rem;
+                        width: 1.15rem;
+                        height: 1.15rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 2.5%;
+                        left: 2.5%;
+
+                        i {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: .8rem;
+                            color: var(--app-bg-color2-transparent);
+                        }
+                    }
+
+                    &.burger_menu_closed {
+                        left: 123%;
+                        top: -65%;
+                        opacity: 0;
+                        visibility: hidden;
+                        background-color: var(--app-intermediate-color);
+                    }
+
+                    .navbar_link {
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: flex-start;
+                        color: var(--app-primary-color-transparent);
+                        padding: .15rem .35rem;
+                        font-size: .65rem;
+                        font-weight: 700;
+                        transition: all .125s ease;
+                    }
+
+                    .navbar_link_active {
+                        color: var(--app-primary-color);
+                        font-size: .75rem;
+                        translate: -22.5% 0;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Footer container
+    .footer_container {
+        padding: .125rem .375rem;
+        //height: min(26px, 4.5%);
+        height: 4.5%;
+
+        .footer_text {
+
+            p {
+                letter-spacing: .025rem;
+                word-spacing: .05rem;
+                font-size: .52rem;
+            }
+        }
+
+        .footer_icon_container {
+            gap: .65rem;
+
+            a {
+                width: .625rem;
+                height: .625rem;
+                padding: .225rem;
+
+                i {
+                    font-size: .525rem;
+                }
+            }
+
+            a:nth-of-type(1) {
+                i {
+                    font-size: .475rem;
+                }
+            }
+        }
+    }
+
+
+    // Vertical email button content
+    .vertical_email_container {
+        bottom: 16%;
+
+        a {
+            font-size: .475rem;
+            letter-spacing: .01rem;
+
+            &::after {
+                bottom: -95%;
+            }
+        }
+    }
+
+
+    // Vertical icon bar content
+    .icon_vertical_bar_container {
+        bottom: 16%;
+        gap: .65rem;
+
+        a {
+            font-size: .6rem;
+            letter-spacing: .1rem;
+        }
+
+        &::after {
+            bottom: -245%;
+        }
+    }
+
+
+    // Tooltip content
+    .tooltip_container {
+        font-size: .575rem;
+    }
+}
+
+
+// Mobile smartphone landscape screens (small)
+@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 400px) {
 
     //Navbar content
     header {
@@ -999,12 +1256,10 @@ screen and (min-height: 250px) and (max-height: 350px) and (min-width: 400px) an
 
 
 // Mobile smartphone landscape screens
-//@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
-@media screen and (min-height: 350px) and (max-height: 500px) and (min-width: 500px),
+@media screen and (min-height: 350px) and (max-height: 450px) and (min-width: 450px),
+screen and (min-height: 450px) and (max-height: 500px) and (min-width: 500px),
 screen and (min-height: 500px) and (max-height: 550px) and (min-width: 550px),
-screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px),
-screen and (min-height: 350px) and (max-height: 400px) and (min-width: 450px) and (max-width: 500px),
-screen and (min-height: 400px) and (max-height: 450px) and (min-width: 450px) and (max-width: 500px) {  
+screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {  
 
     //Navbar content
     header {

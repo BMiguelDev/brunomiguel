@@ -62,11 +62,11 @@ export default function Contact() {
                 <div className={styles.contact_alternatives}>
                     <p>You can also find me here!</p>
                     <div className={styles.contact_alternatives_anchors}>
-                        <a href="https://google.com" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/miguel--bruno/" target="_blank" rel="noreferrer">
                             <p>LinkedIn</p>
                             <i className="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="https://google.com" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/BMiguelDev" target="_blank" rel="noreferrer">
                             <p>Github</p>
                             <i className="fa-brands fa-github"></i>
                         </a>
