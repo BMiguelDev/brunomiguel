@@ -30,7 +30,8 @@ screen and (max-height: 300px) and (max-width: 300px) {
 
 // Mobile smartphone portrait screens (very small)
 @media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 300px) and (max-height: 400px),
-screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and (max-height: 400px) {
+screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and (max-height: 400px),
+screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and (max-height: 400px) {
 
     // App content
     .app_container {
@@ -292,7 +293,9 @@ screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and
 // Mobile smartphone portrait screens (small)
 @media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 400px),
 screen and (min-width: 350px) and (max-width: 400px) and (min-height: 400px) and (max-height: 500px),
-screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and (max-height: 500px) {
+screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and (max-height: 500px),
+screen and (min-width: 400px) and (max-width: 450px) and (min-height: 400px) and (max-height: 450px),
+screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and (max-height: 500px) {
 
     // App content
     .app_container {
@@ -341,7 +344,7 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
                 align-items: center;
                 justify-content: flex-end;
                 gap: 1.65rem;
-                position: relative;
+                //position: relative;
                 //margin-right: 0rem;
                 width: 35%;
 
@@ -410,10 +413,14 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 
                 .navbar_burger_menu_container {
                     position: absolute;
-                    left: 4%;
-                    top: -65%;
+                    //left: 14%;
+                    right: -.5%;
+                    //top: -65%;
+                    top: 0;
                     height : fit-content;
-                    width : 120%;
+                    //width : 110%;
+                    width: 36%;
+                    max-width: 115px;
                     opacity: 1;
                     visibility: visible;
                     display: flex;
@@ -447,8 +454,10 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
                     }
 
                     &.burger_menu_closed {
-                        left: 115%;
-                        top: -65%;
+                        //left: 125%;
+                        right: -36.5%;
+                        //top: -65%;
+                        top: 0;
                         opacity: 0;
                         visibility: hidden;
                         background-color: var(--app-intermediate-color);
@@ -800,7 +809,8 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 
 
 // Mobile smartphone landscape screens (low height)
-@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 500px) {
+@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 500px),
+screen and (min-height: 250px) and (max-height: 350px) and (min-width: 400px) and (max-width: 500px) {
 
     //Navbar content
     header {
@@ -992,7 +1002,9 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 //@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
 @media screen and (min-height: 350px) and (max-height: 500px) and (min-width: 500px),
 screen and (min-height: 500px) and (max-height: 550px) and (min-width: 550px),
-screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {  
+screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px),
+screen and (min-height: 350px) and (max-height: 400px) and (min-width: 450px) and (max-width: 500px),
+screen and (min-height: 400px) and (max-height: 450px) and (min-width: 450px) and (max-width: 500px) {  
 
     //Navbar content
     header {

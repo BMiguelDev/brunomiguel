@@ -1,6 +1,7 @@
 // Mobile smartphone portrait screens (very small)
 @media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 300px) and (max-height: 400px),
-screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and (max-height: 400px) {
+screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and (max-height: 400px),
+screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and (max-height: 400px) {
 
     // Home content
     .home_container {
@@ -83,7 +84,9 @@ screen and (min-width: 350px) and (max-width: 400px) and (min-height: 300px) and
 // Mobile smartphone portrait screens (small)
 @media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 400px),
 screen and (min-width: 350px) and (max-width: 400px) and (min-height: 400px) and (max-height: 500px),
-screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and (max-height: 500px) {
+screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and (max-height: 500px),
+screen and (min-width: 400px) and (max-width: 450px) and (min-height: 400px) and (max-height: 450px),
+screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and (max-height: 500px) {
 
     // Home content
     .home_container {
@@ -246,7 +249,8 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 
 
 // Mobile smartphone landscape screens (low height)
-@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 500px) {
+@media screen and (min-height: 250px) and (max-height: 350px) and (min-width: 500px),
+screen and (min-height: 250px) and (max-height: 350px) and (min-width: 400px) and (max-width: 500px) {
 
     // Home content
     .home_container {
@@ -273,18 +277,18 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
                 gap: .35rem;
 
                 h2 {
-                    font-size: 1.2rem;
-                    letter-spacing: .03rem;
+                    font-size: 1.15rem;
+                    letter-spacing: .02rem;
                     line-height: 1.35rem;
                     align-self: center;
                 }
 
                 h2:nth-of-type(1) {
-                    padding-right: 10%;
+                    padding-right: 8.5%;
                 }
 
                 h2:nth-of-type(2) {
-                    padding-left: 10%;
+                    padding-left: 8.5%;
 
                 }
             }
@@ -312,7 +316,7 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 
         .home_picture_container {
             flex: unset;
-            max-width: 34%;
+            max-width: 35%;
             max-height: 50vh;
             aspect-ratio: 1/1;
 
@@ -325,10 +329,11 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 450px) and
 
 
 // Mobile smartphone landscape screens
-//@media screen and (max-height: 650px) and (min-width: 501px) and (max-width: 1000px) {
 @media screen and (min-height: 350px) and (max-height: 500px) and (min-width: 500px),
 screen and (min-height: 500px) and (max-height: 550px) and (min-width: 550px),
-screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
+screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px),
+screen and (min-height: 350px) and (max-height: 400px) and (min-width: 450px) and (max-width: 500px),
+screen and (min-height: 400px) and (max-height: 450px) and (min-width: 450px) and (max-width: 500px) {
 
     // Home content
     .home_container {
@@ -356,19 +361,19 @@ screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
                 gap: .5rem;
 
                 h2 {
-                    font-size: 1.375rem;
-                    letter-spacing: .03rem;
+                    font-size: 1.3rem;
+                    letter-spacing: .0175rem;
                     line-height: 1.55rem;
 
                     align-self: center;
                 }
 
                 h2:nth-of-type(1) {
-                    padding-right: 10%;
+                    padding-right: 9%;
                 }
 
                 h2:nth-of-type(2) {
-                    padding-left: 10%;
+                    padding-left: 9%;
 
                 }
             }
