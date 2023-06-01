@@ -41,7 +41,7 @@ const ProjectsData = [
         description: "Browse products and manage a shopping cart",
         image: require('../assets/images/shopping-cart-thumbnail-light.png'),
         imageDark: require('../assets/images/shopping-cart-thumbnail-light.png'),
-        url: "bmigueldev.github.io/shopping-cart/",
+        url: "https://bmigueldev.github.io/shopping-cart/",
         codeUrl: "https://github.com/BMiguelDev/shopping-cart"
     }
 ];

@@ -76,8 +76,7 @@ export default function About() {
               <p>Sass</p>
               <img src={require("../../assets/images/sass_logo.png")} alt="" />
             </div>
-            <div className={styles.skills_technology_container}>
-              {/* <p>React Testing Library</p> */}
+            <div className={styles.skills_technology_container} title='React Testing Library'>
               <p>RTL</p>
               <img src={require("../../assets/images/react_testing_library_logo.png")} alt="" />
             </div>

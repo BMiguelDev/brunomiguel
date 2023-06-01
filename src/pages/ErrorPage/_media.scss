@@ -80,11 +80,8 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
 
 
 // Mobile smartphone portrait screens (normal)
-// @media screen and (min-width: 250px) and (max-width: 650px) and (min-height: 950px),
-// screen and (min-width: 300px) and (max-width: 650px) and (min-height: 500px),
-// screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and (max-height: 550px)
-//@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) and (max-height: 1000px) {
-@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) {
+@media screen and (min-width: 350px) and (max-width: 550px) and (min-height: 500px),
+screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and (max-height: 650px) {
 
     // Error page content
     .errorpage_container {
@@ -206,7 +203,7 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
 @media screen and (min-height: 350px) and (max-height: 450px) and (min-width: 450px),
 screen and (min-height: 450px) and (max-height: 500px) and (min-width: 500px),
 screen and (min-height: 500px) and (max-height: 550px) and (min-width: 550px),
-screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
+screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
 
     // Error page content
     .errorpage_container {
@@ -246,7 +243,7 @@ screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
 
 
 // Mobile tablet portrait screens
-@media screen and (min-height: 650px) and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-height: 650px) and (min-width: 550px) and (max-width: 1000px) {
 
     // Error page content
     .errorpage_container {
@@ -273,6 +270,39 @@ screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
             text-align: center;
             padding: .65rem .75rem;
             line-height: 1.15rem;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}
+
+
+// Media queries for normal low height wide screens, and normal high height medium width screens
+@media screen and (min-height: 650px) and (min-width: 1000px) and (max-width: 1200px) {
+
+    // Error page content
+    .errorpage_container {
+        margin: auto 21.5%;
+        padding: 1rem;
+        padding-top: 2rem;
+        border-radius: 12.5%;
+
+        img {
+            border-radius: 12.5%;
+            height: 45vh;
+            width: fit-content;
+        }
+
+        p {
+            font-size: 1.175rem;
+        }
+
+        .error_page_link {
+            padding: 1rem;
+            line-height: 1rem;
+            font-size: 1rem;
 
             &:hover {
                 scale: 1.05;

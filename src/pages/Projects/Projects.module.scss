@@ -72,19 +72,19 @@
                 height: 100%;
                 opacity: 0;
                 transition: all .5s ease;
-                padding: 1.1rem;
+                padding: .6rem;
                 text-align: center;
 
                 h4 {
                     color: var(--footer-color);
                     margin: 0;
-                    font-size: 1.25rem;
+                    font-size: 1.2rem;
                     letter-spacing: .05rem;
                 }
 
                 &>p {
                     margin: 0;
-                    line-height: 1.5rem;
+                    line-height: 1.2rem;
                     letter-spacing: .02rem;
                     font-size: .95rem;
                     font-weight: 600;
@@ -99,7 +99,7 @@
                     width: 100%;
 
                     .single_project_website_anchor {
-                        padding: .35rem .85rem;
+                        padding: .1rem .85rem;
                         border-radius: 2rem;
                         text-decoration: none;
                         border: .125rem solid var(--app-primary-color);
@@ -114,10 +114,11 @@
                             margin: 0;
                             font-weight: 800;
                             letter-spacing: .015rem;
+                            font-size: .95rem;
                         }
 
                         p:nth-of-type(2) {
-                            font-size: 1.25rem;
+                            font-size: 1.2rem;
                         }
 
                         &:hover {
@@ -126,7 +127,7 @@
                     }
 
                     .single_project_code_anchor {
-                        padding: .55rem;
+                        padding: .4rem;
                         border-radius: 50%;
                         text-decoration: none;
                         border: .125rem solid var(--app-primary-color);
@@ -136,7 +137,7 @@
                         justify-content: center;
 
                         i {
-                            font-size: 1.15rem;
+                            font-size: 1.1rem;
                             color: var(--footer-color);
                         }
 

@@ -163,11 +163,8 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
 
 
 // Mobile smartphone portrait screens (normal)
-// @media screen and (min-width: 250px) and (max-width: 650px) and (min-height: 950px),
-// screen and (min-width: 300px) and (max-width: 650px) and (min-height: 500px),
-// screen and (min-width: 500px) and (max-width: 550px) and (min-height: 500px) and (max-height: 550px)
-//@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) and (max-height: 1000px) {
-@media screen and (min-width: 350px) and (max-width: 500px) and (min-height: 500px) {
+@media screen and (min-width: 350px) and (max-width: 550px) and (min-height: 500px),
+screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and (max-height: 650px) {
 
     // Home content
     .home_container {
@@ -406,7 +403,7 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
 @media screen and (min-height: 350px) and (max-height: 450px) and (min-width: 450px),
 screen and (min-height: 450px) and (max-height: 500px) and (min-width: 500px),
 screen and (min-height: 500px) and (max-height: 550px) and (min-width: 550px),
-screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
+screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
 
     // Home content
     .home_container {
@@ -488,7 +485,7 @@ screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
 
 
 // Mobile tablet portrait screens
-@media screen and (min-height: 650px) and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-height: 650px) and (min-width: 550px) and (max-width: 1000px) {
 
       // Home content
       .home_container {
@@ -558,6 +555,64 @@ screen and (min-height: 550px) and (max-height: 600px) and (min-width: 600px) {
             img {
                 object-fit: cover;
             }
+        }
+    }
+}
+
+
+// Media queries for normal low height wide screens, normal high height medium width screens
+@media screen and (min-height: 650px) and (min-width: 1000px) and (max-width: 1200px) {
+
+    // Home content
+    .home_container { 
+        margin: auto 11.5%;
+        gap: 7%;
+
+        .home_text_container {
+            gap: 1.15rem;
+            width: min(56%, 600px);
+            flex: unset;
+
+            h4 {
+                font-size: 1.5rem;
+                padding: .675rem 1.5rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .prof_titles_container {
+                gap: 1.15rem;
+
+                h2 {
+                    font-size: 2.65rem;
+                    letter-spacing: .1rem;
+                }
+            }
+
+            &>h6 {
+                font-size: 1.1rem;
+                padding-top: 1.65rem;
+            }
+
+            .home_about_link_container {
+                margin-top: 1rem;
+                padding: .5rem 1.1rem;
+                margin-left: 1rem;
+
+                h6 {
+                    font-size: .925rem;
+                }
+
+                span {
+                    font-size: 1.175rem;
+                }
+            }
+        }
+
+        .home_picture_container {
+            flex: unset;
+            max-height: min(50vh, 500px);
+            max-width: min(37%, 500px);
+            aspect-ratio: 1/1;
         }
     }
 }

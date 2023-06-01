@@ -76,14 +76,14 @@
                 display: flex;
                 flex-wrap: wrap-reverse;
                 justify-content: center;
-                gap: 1.5rem;
+                gap: 1.35rem;
     
                 .about_description_item {
                     border: .1rem solid var(--app-intermediate-color);
                     border-radius: 1rem;
                     transition: all .2s ease;
                     box-shadow: .075rem .15rem 1rem var(--app-intermediate-color-transparent2);
-                    width: 27.5%;
+                    width: 29.5%;
                     transition: all .2s ease-in-out;
     
                     &:hover {
@@ -93,7 +93,7 @@
                     }
     
                     .description_item_text {
-                        padding: 1rem 1.5rem;
+                        padding: 1rem .75rem;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -106,7 +106,7 @@
                             margin: 0;
                             font-size: 1.4rem;
                             font-weight: 800;
-                            letter-spacing: .05rem;
+                            letter-spacing: .0425rem;
                             color: var(--app-primary-color);
                             transition: all .2s ease-in-out;
                         }
@@ -219,7 +219,7 @@
                     }
     
                     img {
-                        height: 80px;
+                        height: 67.5px;
                         border-radius: .5rem;
                     }
 

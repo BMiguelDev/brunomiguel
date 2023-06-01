@@ -220,7 +220,8 @@ header {
 .footer_container {
     margin-top: auto;
     width: 100%;
-    height: 4.5%;
+    //height: 4.5%;
+    height: min(4.5%, 30px);
     background-color: var(--footer-bg-color);
     border-top-left-radius: .15rem;
     border-top-right-radius: .15rem;
@@ -311,9 +312,11 @@ header {
             content: "";
             background-color: var(--app-secondary-color);
             position: absolute;
-            bottom: -100%;
+            // bottom: -100%;
+            bottom: -155%;
             left: 50%;
-            height: 85%;
+            // height: 85%;
+            height: 140%;
             width: .1rem;
             translate: -50% 0%;
             z-index: -1;
@@ -350,9 +353,11 @@ header {
             content: "";
             background-color: var(--app-secondary-color);
             position: absolute;
-            bottom: -270%;
+            // bottom: -270%;
+            bottom: -500%;
             left: 50%;
-            height: 220.5%;
+            // height: 220.5%;
+            height: 450.5%;
             width: .1rem;
             translate: -150% 0%;
             z-index: -1;
