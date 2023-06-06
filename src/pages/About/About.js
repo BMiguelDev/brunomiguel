@@ -11,7 +11,7 @@ export default function About() {
         <div className={styles.about_description}>
           <div className={styles.about_description_text}>
             <p>I'm a <span>Software Engineer</span>, specializing in <span>Front End Web Development</span>, based in Porto, Portugal.</p>
-            <p>I create great user experiences and my skillset is mainly focused on <span>React</span>, and that's the area I'm interested in the most.</p>
+            <p>I create great user experiences and my skillset is mainly focused on <span>React</span>, and that's the area I'm interested in the most. I focus on adaptability; if I don't know it, I can learn it.</p>
             <p>In the past, I have also worked in full stack development and <a href="https://repositorio-aberto.up.pt/handle/10216/136558" target="_blank" rel="noreferrer">data science projects</a>.</p>
           </div>
           <div className={styles.about_description_items_container}>
@@ -33,7 +33,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <a href="#about_skills" className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>11+</p>
+                <p className={styles.description_item_text_title}>12+</p>
                 <p className={styles.description_item_text_explanation}>
                   Tecnologies Used
                 </p>
@@ -87,6 +87,10 @@ export default function About() {
             <div className={styles.skills_technology_container}>
               <p>Cypress</p>
               <img src={require("../../assets/images/cypress_logo1.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              <p>Storybook</p>
+              <img src={require("../../assets/images/storybook_logo.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container}>
               <p>Git</p>
