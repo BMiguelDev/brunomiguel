@@ -25,7 +25,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <Link to='/projects' className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>6+</p>
+                <p className={styles.description_item_text_title}>7+</p>
                 <p className={styles.description_item_text_explanation}>
                   Projects Completed
                 </p>

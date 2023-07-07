@@ -43,6 +43,15 @@ const ProjectsData = [
         imageDark: require('../assets/images/shopping-cart-thumbnail-light.png'),
         url: "https://bmigueldev.github.io/shopping-cart/",
         codeUrl: "https://github.com/BMiguelDev/shopping-cart"
+    },
+    {
+        id: 6,
+        title: "Buzz Circle",
+        description: "Create and manage blog posts in this social blog simulation",
+        image: require('../assets/images/buzz-circle-thumbnail-light.png'),
+        imageDark: require('../assets/images/buzz-circle-thumbnail-light.png'),
+        url: "https://bmigueldev.github.io/buzz-circle/",
+        codeUrl: "https://github.com/BMiguelDev/buzz-circle"
     }
 ];
 export default ProjectsData;

@@ -25,6 +25,7 @@ export default function PageLayout() {
         // undo these modifications on "About" page, as this page has scrolling
         const handleResize = () => {
             if (appContainerRef.current) {
+                // TODO: Check if the minHeight = "100vh" below looks good on mobile screens
                 if (location.pathname === '/about' || location.pathname === '/projects') {
                     appContainerRef.current.style.height = "unset";
                     appContainerRef.current.style.maxHeight = "unset";
