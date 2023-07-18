@@ -33,7 +33,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <a href="#about_skills" className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>12+</p>
+                <p className={styles.description_item_text_title}>13+</p>
                 <p className={styles.description_item_text_explanation}>
                   Tecnologies Used
                 </p>
@@ -45,6 +45,7 @@ export default function About() {
             <span className={styles.btn_icon}><i className="fas fa-download"></i></span>
           </a>
         </div>
+        {/* TODO: Maybe change skills list of SkillsData.js and here just map the data */}
         <div className={styles.about_skills} id="about_skills">
           <h3 className={styles.about_skills_title}>My Skills</h3>
           <div className={styles.about_skills_technologies}>
@@ -75,6 +76,10 @@ export default function About() {
             <div className={styles.skills_technology_container}>
               <p>Sass</p>
               <img src={require("../../assets/images/sass_logo.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              <p>Styled Components</p>
+              <img src={require("../../assets/images/styled_components_logo.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container} title='React Testing Library'>
               <p>RTL</p>
