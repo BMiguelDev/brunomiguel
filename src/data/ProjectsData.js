@@ -49,10 +49,18 @@ const ProjectsData = [
         title: "Buzz Circle",
         description: "Create and manage blog posts in this social blog simulation",
         image: require('../assets/images/buzz-circle-thumbnail-light.png'),
-        imageDark: require('../assets/images/buzz-circle-thumbnail-light.png'),
+        imageDark: require('../assets/images/buzz-circle-thumbnail-dark.png'),
         url: "https://bmigueldev.github.io/buzz-circle/",
         codeUrl: "https://github.com/BMiguelDev/buzz-circle"
+    },
+    {
+        id: 7,
+        title: "Movie Bay",
+        description: "Search for movies and series in this movie search tool",
+        image: require('../assets/images/movie-bay-thumbnail-light.png'),
+        imageDark: require('../assets/images/movie-bay-thumbnail-light.png'),
+        url: "https://bmigueldev.github.io/movie-bay/",
+        codeUrl: "https://github.com/BMiguelDev/movie-bay"
     }
 ];
 export default ProjectsData;
-

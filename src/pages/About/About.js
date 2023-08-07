@@ -25,7 +25,7 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <Link to='/projects' className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>7+</p>
+                <p className={styles.description_item_text_title}>8+</p>
                 <p className={styles.description_item_text_explanation}>
                   Projects Completed
                 </p>
@@ -33,9 +33,9 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <a href="#about_skills" className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>13+</p>
+                <p className={styles.description_item_text_title}>14+</p>
                 <p className={styles.description_item_text_explanation}>
-                  Tecnologies Used
+                  Technologies Used
                 </p>
               </a>
             </div>
@@ -96,6 +96,10 @@ export default function About() {
             <div className={styles.skills_technology_container}>
               <p>Storybook</p>
               <img src={require("../../assets/images/storybook_logo.png")} alt="" />
+            </div>
+            <div className={styles.skills_technology_container}>
+              <p>Webpack</p>
+              <img src={require("../../assets/images/webpack_logo.png")} alt="" />
             </div>
             <div className={styles.skills_technology_container}>
               <p>Git</p>
