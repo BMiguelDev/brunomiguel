@@ -35,8 +35,9 @@ export default function PageLayout() {
                 else {
                     appContainerRef.current.style.height = `${window.innerHeight}px`;
                     appContainerRef.current.style.minHeight = "unset";
+                    appContainerRef.current.style.maxHeight = "unset";
                     // TODO: Fix width and height value in if condition, if necessary. This if should catch all values for desktop/laptop media breakpoints
-                    if (window.innerWidth > 800) appContainerRef.current.style.maxHeight = "100vh";
+                    if (window.innerWidth > 1200 && window.innerHeight > 650) appContainerRef.current.style.maxHeight = "100vh";
                 }
             }
         }

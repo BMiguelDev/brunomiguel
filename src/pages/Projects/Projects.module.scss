@@ -36,8 +36,6 @@
     }
 
     .projects_content_container {
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -62,7 +60,6 @@
                 // align-self: center;
                 // justify-self: center;
                 position: relative;
-                //width: 100%;
                 width: 100%;
                 overflow: hidden;
                 outline: .05rem solid var(--app-primary-color-transparent4);
@@ -108,10 +105,6 @@
                         justify-content: center;
                         gap: 1rem;
                         width: 100%;
-                        // display: none;
-                        // opacity: 0;
-                        // visibility: hidden;
-                        // transition: all .3s ease-in-out;
 
                         .single_project_website_anchor {
                             padding: .1rem .85rem;
@@ -161,94 +154,7 @@
                             }
                         }
                     }
-
-                    // .single_project_skills_container {
-                    //     position: absolute;
-                    //     top: -5%;
-                    //     left: 0;
-                    //     width: 100%;
-                    //     display: flex;
-
-                    //     .single_project_skills_item {
-                    //         width: 10%;
-                    //         height: 10%;
-                    //         border-radius: 1rem;
-                    //         background-color: var(--app-secondary-color-transparent);
-
-
-
-                    //         img {
-                    //             width: 100%;
-                    //             height: 100%;
-                    //             opacity: 1;
-
-                    //         }
-                    //     }
-                    // }
-
-                    // @keyframes becomeVisible {
-                    //     0% {
-                    //         visibility: hidden;
-                    //     }
-                    //     25% {
-                    //         visibility: hidden;
-                    //     }
-                    //     100% {
-                    //         visibility: visible;
-                    //     }
-                    // }
-                    
-                    // &:hover {
-                    //     .single_project_anchors_container {
-                    //         // opacity: 0;
-                    //         // visibility: visible;
-                    //         animation: becomeVisible .3s ease-in-out 0s forwards;
-                    //     }
-                    // }
                 }
-
-                // &:hover {
-
-                //     img {
-                //         opacity: .075;
-                //         scale: 1.1;
-                //     }
-
-                //     .single_project_description_container {
-                //         display: flex;
-                //         flex-direction: column;
-                //         align-items: center;
-                //         justify-content: space-evenly;
-                //         position: absolute;
-                //         top: 0;
-                //         left: 0;
-                //         opacity: 1;
-                //     }
-                // }
-
-                // .single_project_skills_container {
-                //     position: absolute;
-                //     top: -5%;
-                //     left: 0;
-                //     width: 100%;
-                //     display: flex;
-
-                //     .single_project_skills_item {
-                //         width: 10%;
-                //         height: 10%;
-                //         border-radius: 1rem;
-                //         background-color: var(--app-secondary-color-transparent);
-
-
-
-                //         img {
-                //             width: 100%;
-                //             height: 100%;
-                //             opacity: 1;
-
-                //         }
-                //     }
-                // }
             }
 
             &:hover {
@@ -269,7 +175,6 @@
                         top: 0;
                         left: 0;
                         opacity: 1;
-                        
                     }
                 }
             }
@@ -279,12 +184,9 @@
                 top: -15px;
                 left: 0;
                 width: 100%;
-                // justify-content: center;
-                // justify-content: flex-end;
                 justify-content: flex-start;
                 gap: .55rem;
                 background-color: transparent;
-                // display: flex;
                 display: none;
                 z-index: 1;
 
@@ -293,18 +195,17 @@
                     height: 30px;
                     border-radius: 1rem;
                     padding: .2rem;
-                    background-color: var(--app-intermediate-color-support);
-                    // background-color: orange;
-                    // background-color: transparent;
-                    // border: 1px solid var(--app-primary-color);
-                    box-shadow: inset 0 0 .6rem .125rem var(--app-primary-color);
-                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     opacity: 0;
+                    background-color: var(--app-special-color);
+                    box-shadow: inset 0 0 .35rem .075rem var(--app-primary-color);
 
                     @keyframes iconAppear {
                         0% {
                             opacity: 0;
-                            translate: 0 -20%;
+                            translate: 0 -30%;
                         }
 
                         100% {

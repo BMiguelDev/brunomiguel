@@ -12,13 +12,21 @@ export default function SingleProject({ data, styles }) {
             <div className={styles.single_project_skills_container}>
                 {data.mainSkills
                     ? data.mainSkills.map((skill) => {
-                        animationDelayCounter = animationDelayCounter + .125;
+                          animationDelayCounter = animationDelayCounter + 0.125;
                           return (
                               <div
                                   className={styles.single_project_skills_item}
                                   key={skill.title}
                                   title={skill.title}
-                                  style={{ animationDelay: animationDelayCounter + "s" }}
+                                  style={{
+                                      animationDelay: animationDelayCounter + "s",
+                                      backgroundColor:
+                                          skill.title === "Redux Toolkit" && isDarkMode
+                                              ? "rgba(81, 167, 213, 1)"
+                                              : skill.title === "React" && !isDarkMode
+                                              ? "rgba(66, 141, 182, 1)"
+                                              : "",
+                                  }}
                               >
                                   <img src={skill.image} alt={skill.title}></img>
                               </div>
@@ -27,7 +35,6 @@ export default function SingleProject({ data, styles }) {
                     : ""}
             </div>
             <div className={styles.single_project_container}>
-                {/* <img src={require('../../assets/images/image.jpg')} alt=""/> */}
                 <img src={isDarkMode ? data.imageDark : data.image} alt="" />
                 <div className={styles.single_project_description_container}>
                     <h4>{data.title}</h4>
@@ -57,33 +64,7 @@ export default function SingleProject({ data, styles }) {
                         </Tooltip>
                     </div>
                 </div>
-                {/* <div className={styles.single_project_skills_container}>
-                    {data.mainSkills
-                        ? data.mainSkills.map((skill) => (
-                              <div className={styles.single_project_skills_item} key={skill.title} title={skill.title}>
-                                  <img src={skill.image} alt={skill.title}></img>
-                              </div>
-                          ))
-                        : ""}
-                </div> */}
             </div>
-            {/* <div className={styles.single_project_skills_container}>
-                {data.mainSkills
-                    ? data.mainSkills.map((skill) => {
-                        animationDelayCounter = animationDelayCounter + .125;
-                          return (
-                              <div
-                                  className={styles.single_project_skills_item}
-                                  key={skill.title}
-                                  title={skill.title}
-                                  style={{ animationDelay: animationDelayCounter + "s" }}
-                              >
-                                  <img src={skill.image} alt={skill.title}></img>
-                              </div>
-                          );
-                      })
-                    : ""}
-            </div> */}
         </div>
     );
 }

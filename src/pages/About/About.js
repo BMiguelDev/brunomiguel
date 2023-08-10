@@ -1,3 +1,4 @@
+import SkillsData from '../../data/SkillsData';
 import styles from './About.module.scss';
 import { Link } from 'react-router-dom';
 
@@ -45,66 +46,15 @@ export default function About() {
             <span className={styles.btn_icon}><i className="fas fa-download"></i></span>
           </a>
         </div>
-        {/* TODO: Maybe change skills list of SkillsData.js and here just map the data */}
         <div className={styles.about_skills} id="about_skills">
           <h3 className={styles.about_skills_title}>My Skills</h3>
           <div className={styles.about_skills_technologies}>
-            <div className={styles.skills_technology_container}>
-              <p>HTML</p>
-              <img src={require("../../assets/images/html_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>CSS</p>
-              <img src={require("../../assets/images/css_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Javascript</p>
-              <img src={require("../../assets/images/javascript_logo2.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Typescript</p>
-              <img src={require("../../assets/images/typescript_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>React</p>
-              <img src={require("../../assets/images/react_logo.svg.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Redux Toolkit</p>
-              <img src={require("../../assets/images/redux_toolkit.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Sass</p>
-              <img src={require("../../assets/images/sass_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Styled Components</p>
-              <img src={require("../../assets/images/styled_components_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container} title='React Testing Library'>
-              <p>RTL</p>
-              <img src={require("../../assets/images/react_testing_library_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Jest</p>
-              <img src={require("../../assets/images/jest_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Cypress</p>
-              <img src={require("../../assets/images/cypress_logo1.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Storybook</p>
-              <img src={require("../../assets/images/storybook_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Webpack</p>
-              <img src={require("../../assets/images/webpack_logo.png")} alt="" />
-            </div>
-            <div className={styles.skills_technology_container}>
-              <p>Git</p>
-              <img src={require("../../assets/images/git_logo.svg.png")} alt="" />
-            </div>
+            {
+              SkillsData.map(skill => <div key={skill.id} className={styles.skills_technology_container} title={skill.title === "RTL" ? 'React Testing Library' : ''}>
+                <p>{skill.title}</p>
+                <img src={skill.image} alt={skill.title} />
+              </div>)
+            }
           </div>
         </div>
       </div>
@@ -130,7 +80,7 @@ export default function About() {
             <h5>BS + MS <span>in Informatics Engineering</span></h5>
             <p className={styles.timeline_description}>
               <span>Informatics and Computing Engineering Bachelor + Masters</span> degree, completed at the <span>Faculty of Engineering of the
-              University of Porto</span>, Portugal
+                University of Porto</span>, Portugal
             </p>
           </div>
           <div className={styles.about_timeline_item}>

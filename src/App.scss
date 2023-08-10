@@ -51,9 +51,8 @@ body {
 }
 
 
-// TODO: tweak breakpoint height and width values after finising responsiveness breakpoints, if necessary
 // Scrollbar styling for non-mobile screens
-@media screen and (min-height: 750px) and (min-width: 1000px) {
+@media screen and (min-height: 650px) and (min-width: 1200px) {
 
     html,
     body {
