@@ -46,4 +46,10 @@ export default function App() {
 
 // TODO:  
 //  - if images take time to load, add loading to whole page until all images are loaded and only then allow showing of page to user (unlikely)
-//  - Reduce spacing between skills and reduce images' size slightly
+//  - Reduce spacing between skills and reduce images' size slightly (on all media breakpoints)
+
+//  - Add to each project the main skills displayed and display then as tiny icons on the right/up/left of project image when we hover/click it (probably make them appear smothly just like the "View Website" and "Code" buttons)
+//    - Add to all media styles the new .single_project_container_wrapper class (Projects.module.scss line 50)
+//    - Fix skill icons styling (size and position) in mobile
+//    - Tweak animation timings (.single_project_anchors_container put transition to control timing of anchors showing on mobile). The rest of timings is great
+//    - on mobile, add a &hover selector such as, when user hovers on .single_project_skills_container, the adjacent sibling .single_project_container .single_project_description_container .single_project_anchors_container becomes visible
