@@ -11,7 +11,7 @@ export default function Home() {
           <h2>Front End Developer</h2>
         </div>
         <h6>I build great user experiences</h6>
-        <Link to='/about' className={styles.home_about_link_container}>
+        <Link to='/portfolio-website/about' className={styles.home_about_link_container}>
           <h6>More About Me</h6>
           <span>➜</span>
         </Link>

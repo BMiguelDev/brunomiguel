@@ -26,7 +26,7 @@ export default function PageLayout() {
         const handleResize = () => {
             if (appContainerRef.current) {
                 // TODO: Check if the minHeight = "100vh" below looks good on mobile screens
-                if (location.pathname === '/about' || location.pathname === '/projects') {
+                if (location.pathname === '/portfolio-website/about' || location.pathname === '/portfolio-website/projects') {
                     appContainerRef.current.style.height = "unset";
                     appContainerRef.current.style.maxHeight = "unset";
                     appContainerRef.current.style.minHeight = "100vh";
