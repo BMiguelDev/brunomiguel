@@ -22,21 +22,19 @@ export default function PageLayout() {
 
     useEffect(() => {
         // Function to update height to prevent 100vh bug where page may be covered by the browser's UI (in mobile), and also to 
-        // undo these modifications on "About" page, as this page has scrolling
+        // undo these modifications on "About" and "Projects" pages, as this pages have scrolling
         const handleResize = () => {
             if (appContainerRef.current) {
-                // TODO: Check if the minHeight = "100vh" below looks good on mobile screens
                 if (location.pathname === '/portfolio-website/about' || location.pathname === '/portfolio-website/projects') {
                     appContainerRef.current.style.height = "unset";
                     appContainerRef.current.style.maxHeight = "unset";
                     appContainerRef.current.style.minHeight = "100vh";
                 }
-                // If user isn't in about page, lock height at window's inner height
+                // If user isn't in about or project page, lock height at window's inner height
                 else {
                     appContainerRef.current.style.height = `${window.innerHeight}px`;
                     appContainerRef.current.style.minHeight = "unset";
                     appContainerRef.current.style.maxHeight = "unset";
-                    // TODO: Fix width and height value in if condition, if necessary. This if should catch all values for desktop/laptop media breakpoints
                     if (window.innerWidth > 1200 && window.innerHeight > 650) appContainerRef.current.style.maxHeight = "100vh";
                 }
             }

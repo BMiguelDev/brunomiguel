@@ -18,6 +18,16 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Remove blue highlight of buttons, links and inputs, when clicked on mobile screens */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 
 // Route transitions content
 .route_fade_in {

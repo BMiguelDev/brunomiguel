@@ -44,3 +44,4 @@ export default function App() {
 
 // TODO:
 //  - if images take time to load on production, add loading to whole page until all images are loaded and only then allow showing of page to user (unlikely)
+//  - change colors in light mode a good amount to be more readable
