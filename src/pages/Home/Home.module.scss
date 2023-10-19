@@ -65,7 +65,7 @@
             width: fit-content;
             gap: .5rem;
             text-decoration: none;
-            padding: .75rem 1.25rem;
+            padding: .7rem 1.25rem;
             margin-left: 1rem;
             color: var(--app-primary-color);
             border-radius: .25rem;
@@ -74,15 +74,15 @@
 
             h6 {
                 margin: 0;
-                font-size: 1rem;
+                font-size: 1.05rem;
             }
 
             span {
-                font-size: 1.25rem;
+                font-size: 1.275rem;
             }
 
             &:hover {
-                background-color: var(--app-primary-color-transparent);
+                background-color: var(--app-intermediate-color-transparent);
             }
         }
     }

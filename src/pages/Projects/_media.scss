@@ -7,7 +7,7 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
         margin: auto 15%;
         height: 77.5%;
         margin-bottom: 7.5%;
-        gap: 1.15rem;
+        gap: 1.65rem;
         margin-top: 3%;
 
         .projects_main_title {
@@ -76,7 +76,11 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -88,7 +92,11 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -144,7 +152,7 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
         margin: auto 15.5%;
         height: 77.5%;
         margin-bottom: 7.5%;
-        gap: 1.75rem;
+        gap: 2rem;
         margin-top: 3%;
 
         .projects_main_title {
@@ -215,7 +223,11 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -227,7 +239,11 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -349,7 +365,11 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -361,7 +381,11 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -418,7 +442,7 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
         height: 70.5%;
         margin-bottom: 3.5%;
         margin-top: 1.5%;
-        gap: 1.15rem;
+        gap: 1.35rem;
 
         .projects_main_title {
 
@@ -487,7 +511,11 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -499,7 +527,11 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -556,7 +588,7 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
         height: 70.5%;
         margin-bottom: 3.5%;
         margin-top: 1.5%;
-        gap: 1.5rem;
+        gap: 1.85rem;
 
         .projects_main_title {
 
@@ -626,7 +658,11 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -638,7 +674,11 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -698,7 +738,7 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
         height: 70.5%;
         margin-bottom: 5%;
         margin-top: 2%;
-        gap: 2rem;
+        gap: 2.25rem;
 
         .projects_main_title {
 
@@ -771,7 +811,11 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -783,7 +827,11 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -911,7 +959,11 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
 
@@ -923,7 +975,11 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                                     }
 
                                     &:hover {
-                                        background-color: var(--app-primary-color);
+                                        background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }
@@ -976,7 +1032,7 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
     // Projects content
     .projects_container {
         margin: auto 11.5%;
-        gap: 3rem;
+        gap: 3.25rem;
         margin-bottom: 1.5rem;
 
         .projects_main_title {
@@ -1038,6 +1094,10 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                                     &:hover {
                                         background-color: initial;
                                     }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
+                                    }
                                 }
 
                                 .single_project_code_anchor {
@@ -1049,6 +1109,10 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
 
                                     &:hover {
                                         background-color: initial;
+                                    }
+
+                                    &:active {
+                                        background-color: var(--app-intermediate-color-transparent4);
                                     }
                                 }
                             }

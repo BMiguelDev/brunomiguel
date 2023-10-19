@@ -1,40 +1,56 @@
 // Variables
 :root {
-    --app-bg-color2: rgb(232, 236, 237);
-    --app-bg-color2-transparent: rgba(232, 236, 237, 0.835);
+    --app-bg-color: rgb(228, 232, 233);
+    --app-bg-color-transparent: rgba(232, 236, 237, 0.875);
     --footer-bg-color: rgb(18, 18, 18);
     --footer-color: rgb(231, 235, 235);
-    --app-primary-color: rgb(49, 112, 142);
-    --app-primary-color-transparent4: rgba(49, 112, 142, .75);
+    --app-text-support-color: rgb(31, 30, 30);
+    --app-primary-color: rgb(43, 105, 134);
     --app-primary-color-transparent: rgba(49, 112, 142, .5);
     --app-primary-color-transparent2: rgba(49, 112, 142, .25);
     --app-primary-color-transparent3: rgba(49, 112, 142, .15);
+    --app-primary-color-transparent4: rgba(49, 112, 142, .75);
+    --app-primary-color-transparent5: rgba(49, 112, 142, .7);
     --app-secondary-color: rgba(104, 120, 100, 1);
-    --app-secondary-color-transparent: rgba(104, 120, 100, .5);
-    --app-intermediate-color: rgba(71, 157, 203, 1);
-    --app-intermediate-color-transparent: rgba(71, 157, 203, .7);
-    --app-intermediate-color-transparent3: rgba(71, 157, 203, .55);
+    --app-secondary-support-color: rgb(112, 123, 129); 
+    --app-secondary-support-color2: rgb(114, 126, 128);
+    --app-intermediate-color: rgb(38, 136, 188);
+    --app-intermediate-support-color: rgb(35, 136, 190);
+    --app-intermediate-support-color2: rgb(183, 221, 239);
+    --app-intermediate-color-transparent: rgba(71, 157, 203, .4);
     --app-intermediate-color-transparent2: rgba(71, 157, 203, .35);
-    --app-special-color: rgb(145, 207, 192);
+    --app-intermediate-color-transparent3: rgba(186, 223, 242, 0.55);
+    --app-intermediate-color-transparent4: rgba(123, 226, 252, 0.65);
+    --app-special-color: rgb(150, 210, 195);
+    --app-special-support-color: rgb(24, 138, 191);
+    --app-special-support-color2: rgb(5, 52, 154);
 }
 
 .dark_mode {
-    --app-bg-color2: rgb(11, 12, 16);
-    --app-bg-color2-transparent: rgba(11, 12, 16, 0.87);
+    --app-bg-color: rgb(11, 12, 16);
+    --app-bg-color-transparent: rgba(11, 12, 16, 0.87);
     --footer-bg-color: rgb(18, 18, 18);
     --footer-color: rgb(211, 215, 215);
-    --app-primary-color: rgb(143, 193, 227);
-    --app-primary-color-transparent4: rgba(143, 193, 227, .75);
+    --app-text-support-color: rgb(211, 215, 215);
+    --app-primary-color: rgb(151, 213, 255);
     --app-primary-color-transparent: rgba(143, 193, 227, .5);
     --app-primary-color-transparent2: rgba(143, 193, 227, .25);
     --app-primary-color-transparent3: rgba(143, 193, 227, .15);
+    --app-primary-color-transparent4: rgba(143, 193, 227, .75);
+    --app-primary-color-transparent5: rgba(143, 193, 227, .625);
     --app-secondary-color: rgba(104, 120, 100, 1);
-    --app-secondary-color-transparent: rgba(104, 120, 100, .5);
-    --app-intermediate-color: rgba(49, 123, 142, 1);
+    --app-secondary-support-color: rgb(129, 143, 144);
+    --app-secondary-support-color2: rgb(112, 127, 129);
+    --app-intermediate-color: rgb(51, 161, 188);
+    --app-intermediate-support-color: rgb(49, 179, 211);
+    --app-intermediate-support-color2: rgb(35, 97, 112);
     --app-intermediate-color-transparent: rgba(49, 123, 142, .7);
-    --app-intermediate-color-transparent3: rgba(49, 123, 142, .55);
     --app-intermediate-color-transparent2: rgba(49, 123, 142, .35);
+    --app-intermediate-color-transparent3: rgba(49, 123, 142, .55);
+    --app-intermediate-color-transparent4: rgba(51, 161, 188, 0.65);
     --app-special-color: rgb(65, 108, 98);
+    --app-special-support-color: rgb(65, 186, 243);
+    --app-special-support-color2: rgb(37, 139, 255);
 }
 
 
@@ -55,7 +71,7 @@
         bottom: 0;
         right: 0;
         background-image: url("../assets/images/background.jpg");
-        background-color: var(--app-bg-color2-transparent);
+        background-color: var(--app-bg-color-transparent);
         background-size: cover;
         opacity: .7;
         z-index: -2;
@@ -68,7 +84,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: var(--app-bg-color2-transparent);
+        background-color: var(--app-bg-color-transparent);
         z-index: -2;
         transition: all .2s ease-in-out;
     }
@@ -118,7 +134,7 @@ header {
                         padding: 2rem;
                         height: 4.25rem;
                         width: 4.25rem;
-                        background-color: var(--app-bg-color2-transparent);
+                        background-color: var(--app-bg-color-transparent);
                         transition: all .2s ease-in-out;
                         
                         i {
@@ -159,7 +175,7 @@ header {
             gap: 2.5rem;
 
             .navbar_link {
-                color: var(--app-primary-color-transparent);
+                color: var(--app-primary-color-transparent5);
                 padding: .5rem;
                 border-radius: .25rem;
                 text-decoration: none;
