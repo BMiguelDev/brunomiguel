@@ -9,7 +9,7 @@ export default function Navbar({ isDarkMode, handleChangeIsDarkMode, isBurgerMen
     return (
         <header>
             <nav className={styles.navbar}>
-                <NavLink to='/portfolio-website' className={styles.navbar_title_link}>
+                <NavLink to='/brunomiguel' className={styles.navbar_title_link}>
                     <div className={styles.navbar_title_container}>
                         <div className={styles.navbar_title_logo_container}>
                             <div className={styles.navbar_title_logo}>
@@ -24,22 +24,22 @@ export default function Navbar({ isDarkMode, handleChangeIsDarkMode, isBurgerMen
                 <div className={styles.navbar_links_container}>
                     <NavLink
                         end
-                        to='/portfolio-website'
+                        to='/brunomiguel'
                         className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                         Home
                     </NavLink>
                     <NavLink
-                        to='/portfolio-website/about'
+                        to='/brunomiguel/about'
                         className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                         About
                     </NavLink>
                     <NavLink
-                        to='/portfolio-website/projects'
+                        to='/brunomiguel/projects'
                         className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                         Projects
                     </NavLink>
                     <NavLink
-                        to='/portfolio-website/contact'
+                        to='/brunomiguel/contact'
                         className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                         Contact
                     </NavLink>
@@ -57,30 +57,30 @@ export default function Navbar({ isDarkMode, handleChangeIsDarkMode, isBurgerMen
                         ref={burgerMenuRef}
                         className={isBurgerMenuToggled ? `${styles.navbar_burger_menu_container}` : `${styles.navbar_burger_menu_container} ${styles.burger_menu_closed}`}
                     >
-                        <div className={styles.burger_menu_button_close} onClick={handleBurgerMenuToggle}>
+                        {/* <div className={styles.burger_menu_button_close} onClick={handleBurgerMenuToggle}>
                             <i className="fa-solid fa-xmark"></i>
-                        </div>
+                        </div> */}
                         <NavLink
                             end
-                            to='/portfolio-website/'
+                            to='/brunomiguel/'
                             onClick={handleBurgerMenuToggle}
                             className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                             Home
                         </NavLink>
                         <NavLink
-                            to='/portfolio-website/about'
+                            to='/brunomiguel/about'
                             onClick={handleBurgerMenuToggle}
                             className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                             About
                         </NavLink>
                         <NavLink
-                            to='/portfolio-website/projects'
+                            to='/brunomiguel/projects'
                             onClick={handleBurgerMenuToggle}
                             className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                             Projects
                         </NavLink>
                         <NavLink
-                            to='/portfolio-website/contact'
+                            to='/brunomiguel/contact'
                             onClick={handleBurgerMenuToggle}
                             className={({ isActive }) => isActive ? `${styles.navbar_link} ${styles.navbar_link_active}` : `${styles.navbar_link}`}>
                             Contact

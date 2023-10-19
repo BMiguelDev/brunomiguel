@@ -61,11 +61,36 @@ const SkillsData = [
     },
     {   
         id: 13,
+        title: "NodeJS",
+        image: require("../assets/images/nodejs_logo.png")
+    },
+    {   
+        id: 14,
+        title: "ExpressJS",
+        image: require("../assets/images/expressjs_logo.png")
+    },
+    {   
+        id: 15,
+        title: "JWT",
+        image: require("../assets/images/JWT_logo.png")
+    },
+    {   
+        id: 16,
+        title: "MongoDB",
+        image: require("../assets/images/MongoDB_logo.webp")
+    },
+    {   
+        id: 17,
+        title: "SQL",
+        image: require("../assets/images/sql_logo.png")
+    },
+    {   
+        id: 18,
         title: "Webpack",
         image: require("../assets/images/webpack_logo.png")
     },
     {   
-        id: 14,
+        id: 19,
         title: "Git",
         image: require("../assets/images/git_logo.svg.png")
     }

@@ -25,7 +25,7 @@ export default function PageLayout() {
         // undo these modifications on "About" and "Projects" pages, as this pages have scrolling
         const handleResize = () => {
             if (appContainerRef.current) {
-                if (location.pathname === '/portfolio-website/about' || location.pathname === '/portfolio-website/projects') {
+                if (location.pathname === '/brunomiguel/about' || location.pathname === '/brunomiguel/projects') {
                     appContainerRef.current.style.height = "unset";
                     appContainerRef.current.style.maxHeight = "unset";
                     appContainerRef.current.style.minHeight = "100vh";

@@ -25,90 +25,100 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
         .projects_content_container {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.25rem;
             flex-wrap: unset;
 
             // Single project content
-            .single_project_container_wrapper {
-                //width: 97.5%;
+            .single_project_container_article {
+                // width: max(82.5%, 165px);
                 width: max(85%, 185px);
+                gap: .4rem;
 
-                .single_project_container {
-                    box-shadow: 0px 0px 5px 2px var(--app-primary-color-transparent);
+                h4 {
+                    font-size: .855rem;
+                    letter-spacing: .025rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .25rem;
+                .single_project_container_wrapper {
+                    // width: max(85%, 185px);
+                    width: 100%;
 
-                        h4 {
-                            font-size: .825rem;
-                            letter-spacing: .025rem;
-                        }
+                    .single_project_container {
+                        box-shadow: 0px 0px 5px 2px var(--app-primary-color-transparent);
 
-                        &>p {
-                            line-height: .8rem;
-                            letter-spacing: .02rem;
-                            font-size: .7rem;
-                        }
+                        .single_project_description_container {
+                            padding: .25rem;
+                            padding-top: 1rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .8rem;
+                                letter-spacing: .02rem;
+                                font-size: .7rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .075rem .4rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
+                                gap: .75rem;
 
-                                p {
-                                    font-size: .625rem;
+                                .single_project_website_anchor {
+                                    padding: .075rem .5rem;
+
+                                    p {
+                                        font-size: .625rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .665rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .7rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .2rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .65rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .2rem;
-
-                                i {
-                                    font-size: .675rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        top: -4px;
+                        gap: .25rem;
+
+                        .single_project_skills_item {
+                            width: 19px;
+                            height: 19px;
+                            padding: .115rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
 
-                .single_project_skills_container {
-                    top: -9px;
-                    gap: .25rem;
-
-                    .single_project_skills_item {
-                        width: 19px;
-                        height: 19px;
-                        padding: .115rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-
-                                visibility: visible;
-                                opacity: 1;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -123,7 +133,6 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
         font-size: .65rem;
     }
 }
-
 
 // Mobile smartphone portrait screens (small)
 @media screen and (min-width: 250px) and (max-width: 350px) and (min-height: 400px),
@@ -153,90 +162,103 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
         .projects_content_container {
             display: flex;
             flex-direction: column;
-            gap: 1.1rem;
+            gap: 1.25rem;
             flex-wrap: unset;
 
             // Single project content
-            .single_project_container_wrapper {
-                //width: 95%;
+            .single_project_container_article {
+                // width: 90%;
+                // width: 95%;
                 width: max(82.5%, 165px);
+                gap: .5rem;
 
-                .single_project_container {
-                    box-shadow: 0px 0px 5px 2px var(--app-primary-color-transparent);
+                h4 {
+                    font-size: .825rem;
+                    letter-spacing: .025rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .2rem .15rem;
+                .single_project_container_wrapper {
+                    //width: 95%;
+                    // width: max(82.5%, 165px);
+                    width: 100%;
 
-                        h4 {
-                            font-size: .825rem;
-                            letter-spacing: .025rem;
-                        }
+                    .single_project_container {
+                        box-shadow: 0px 0px 5px 2px var(--app-primary-color-transparent);
 
-                        &>p {
-                            line-height: .825rem;
-                            letter-spacing: .02rem;
-                            font-size: .685rem;
-                        }
+                        .single_project_description_container {
+                            padding: .2rem .15rem;
+                            padding-top: 1rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .825rem;
+                                letter-spacing: .02rem;
+                                font-size: .685rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .1rem .65rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
+                                gap: .75rem;
 
-                                p {
-                                    font-size: .65rem;
+                                .single_project_website_anchor {
+                                    padding: .1rem .65rem;
+
+                                    p {
+                                        font-size: .65rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .7rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .725rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .235rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .675rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .235rem;
-
-                                i {
-                                    font-size: .725rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -10px;
+                        top: -5px;
+                        gap: .2rem;
+
+                        .single_project_skills_item {
+                            width: 18px;
+                            height: 18px;
+                            padding: .115rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
 
-                .single_project_skills_container {
-                    top: -10px;
-                    gap: .25rem;
-
-                    .single_project_skills_item {
-                        width: 18px;
-                        height: 18px;
-                        padding: .115rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-
-                                visibility: visible;
-                                opacity: 1;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -251,7 +273,6 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
         font-size: .65rem;
     }
 }
-
 
 // Mobile smartphone portrait screens (normal)
 @media screen and (min-width: 350px) and (max-width: 550px) and (min-height: 500px),
@@ -272,7 +293,7 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                 letter-spacing: .225rem;
 
                 &::after {
-                    bottom: -35%;
+                    bottom: -32.5%;
                 }
             }
         }
@@ -284,84 +305,94 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
             flex-wrap: unset;
 
             // Single project content
-            .single_project_container_wrapper {
-                width: 90%;
+            .single_project_container_article {
+                // width: 90%;
+                width: 95%;
+                gap: .6rem;
 
-                .single_project_container {
+                h4 {
+                    font-size: .925rem;
+                    letter-spacing: .025rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .35rem .75rem;
+                .single_project_container_wrapper {
+                    width: 100%;
 
-                        h4 {
-                            font-size: .925rem;
-                            letter-spacing: .025rem;
-                        }
+                    .single_project_container {
 
-                        &>p {
-                            line-height: .95rem;
-                            letter-spacing: .02rem;
-                            font-size: .775rem;
-                        }
+                        .single_project_description_container {
+                            padding: .35rem .75rem;
+                            padding-top: 1.25rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .95rem;
+                                letter-spacing: .02rem;
+                                font-size: .775rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .1rem .65rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
 
-                                p {
-                                    font-size: .7rem;
+                                .single_project_website_anchor {
+                                    padding: .1rem .65rem;
+
+                                    p {
+                                        font-size: .7rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .75rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .775rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .275rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .75rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .275rem;
-
-                                i {
-                                    font-size: .8rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -11px;
+                        top: -6px;
+                        gap: .25rem;
+
+                        .single_project_skills_item {
+                            width: 22px;
+                            height: 22px;
+                            padding: .125rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
 
-                .single_project_skills_container {
-                    top: -11px;
-                    gap: .25rem;
-
-                    .single_project_skills_item {
-                        width: 22px;
-                        height: 22px;
-                        padding: .125rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-
-                                visibility: visible;
-                                opacity: 1;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -406,88 +437,100 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            gap: .9rem;
+            gap: 1.1rem;
 
             // Single project content
-            .single_project_container_wrapper {
-                width: max(30%, 185px);
+            .single_project_container_article {
+                // width: max(85%, 185px);
+                width: max(75%, 185px);
+                gap: .425rem;
 
-                .single_project_container {
+                h4 {
+                    font-size: .885rem;
+                    letter-spacing: .02rem;
+                    line-height: .95rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .2rem .5rem;
+                .single_project_container_wrapper {
+                    // width: max(30%, 185px);
+                    width: 100%;
 
-                        h4 {
-                            font-size: .9rem;
-                            letter-spacing: .02rem;
-                            line-height: .95rem;
-                        }
+                    .single_project_container {
 
-                        &>p {
-                            line-height: .8rem;
-                            letter-spacing: .015rem;
-                            font-size: .7rem;
-                        }
+                        .single_project_description_container {
+                            padding: .2rem .5rem;
+                            padding-top: 1rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .8rem;
+                                letter-spacing: .015rem;
+                                font-size: .725rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .075rem .65rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
+                                gap: .75rem;
 
-                                p {
-                                    font-size: .65rem;
+                                .single_project_website_anchor {
+                                    padding: .075rem .65rem;
+
+                                    p {
+                                        font-size: .65rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .75rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .8rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .25rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .675rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .25rem;
-
-                                i {
-                                    font-size: .725rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -8.5px;
+                        top: -4px;
+                        gap: .25rem;
+
+                        .single_project_skills_item {
+                            width: 19px;
+                            height: 19px;
+                            padding: .115rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
 
-                .single_project_skills_container {
-                    top: -8.5px;
-                    gap: .25rem;
-
-                    .single_project_skills_item {
-                        width: 18px;
-                        height: 18px;
-                        padding: .115rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-
-                                visibility: visible;
-                                opacity: 1;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -533,88 +576,100 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.25rem;
-            row-gap: 1.175rem;
+            // row-gap: 1.25rem;
 
             // Single project content
-            .single_project_container_wrapper {
+            .single_project_container_article {
+                // width: max(75%, 185px);
                 width: max(30%, 185px);
+                gap: .45rem;
 
-                .single_project_container {
+                h4 {
+                    font-size: .925rem;
+                    letter-spacing: .02rem;
+                    line-height: .95rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .2rem .5rem;
+                .single_project_container_wrapper {
+                    // width: max(30%, 185px);
+                    width: 100%;
 
-                        h4 {
-                            font-size: .9rem;
-                            letter-spacing: .02rem;
-                            line-height: .95rem;
-                        }
+                    .single_project_container {
 
-                        &>p {
-                            line-height: .8rem;
-                            letter-spacing: .015rem;
-                            font-size: .7rem;
-                        }
+                        .single_project_description_container {
+                            padding: .2rem .5rem;
+                            padding-top: 1rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .8rem;
+                                letter-spacing: .015rem;
+                                font-size: .725rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .075rem .65rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
+                                gap: .875rem;
 
-                                p {
-                                    font-size: .65rem;
+                                .single_project_website_anchor {
+                                    padding: .075rem .65rem;
+
+                                    p {
+                                        font-size: .675rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .75rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .8rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .25rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .675rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .25rem;
-
-                                i {
-                                    font-size: .725rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -10.5px;
+                        top: -4px;
+                        gap: .25rem;
+
+                        .single_project_skills_item {
+                            width: 20px;
+                            height: 20px;
+                            padding: .115rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
 
-                .single_project_skills_container {
-                    top: -10.5px;
-                    gap: .25rem;
-
-                    .single_project_skills_item {
-                        width: 20px;
-                        height: 20px;
-                        padding: .115rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-
-                                visibility: visible;
-                                opacity: 1;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -663,89 +718,103 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.35rem;
-            row-gap: 1.25rem;
+            // row-gap: 1.25rem;
+            row-gap: 1.3rem;
 
             // Single project content
-            .single_project_container_wrapper {
-                //flex: 0 0 45%;
+            .single_project_container_article {
+                // width: max(75%, 185px);
+                // width: max(30%, 185px);
                 width: max(30%, 185px);
+                gap: .475rem;
 
-                .single_project_container {
+                h4 {
+                    font-size: .925rem;
+                    letter-spacing: .02rem;
+                    line-height: .95rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .25rem .5rem;
+                .single_project_container_wrapper {
+                    //flex: 0 0 45%;
+                    // width: max(30%, 185px);
+                    width: 100%;
 
-                        h4 {
-                            font-size: .925rem;
-                            letter-spacing: .02rem;
-                            line-height: .95rem;
-                        }
+                    .single_project_container {
 
-                        &>p {
-                            line-height: .85rem;
-                            letter-spacing: .015rem;
-                            font-size: .725rem;
-                        }
+                        .single_project_description_container {
+                            padding: .25rem .5rem;
+                            padding-top: 1rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .85rem;
+                                letter-spacing: .01rem;
+                                font-size: .75rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .1rem .65rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
+                                gap: .875rem;
 
-                                p {
-                                    font-size: .675rem;
+                                .single_project_website_anchor {
+                                    padding: .1rem .65rem;
+
+                                    p {
+                                        font-size: .65rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .775rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .825rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .3rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .7rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .3rem;
-
-                                i {
-                                    font-size: .75rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -10.5px;
+                        top: -5px;
+                        gap: .25rem;
+
+                        .single_project_skills_item {
+                            width: 20px;
+                            height: 20px;
+                            padding: .115rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
 
-                .single_project_skills_container {
-                    top: -10.5px;
-                    gap: .25rem;
-
-                    .single_project_skills_item {
-                        width: 20px;
-                        height: 20px;
-                        padding: .115rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-
-                                visibility: visible;
-                                opacity: 1;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -780,7 +849,7 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                 letter-spacing: .2rem;
 
                 &::after {
-                    bottom: -40%;
+                    bottom: -35%;
                 }
             }
         }
@@ -789,89 +858,102 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.575rem;
+            // justify-content: center;
+            // justify-content: space-around;
+            justify-content: space-evenly;
+            row-gap: 1.575rem;
 
             // Single project content
-            .single_project_container_wrapper {
+            .single_project_container_article {
                 width: max(40%, 185px);
+                display: flex;
+                flex-direction: column;
+                gap: .7rem;
 
-                .single_project_container {
+                h4 {
+                    font-size: .9rem;
+                    letter-spacing: .02rem;
+                    text-indent: .25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .3rem .5rem;
+                .single_project_container_wrapper {
+                    width: 100%;
 
-                        h4 {
-                            font-size: .9rem;
-                            letter-spacing: .02rem;
-                        }
+                    .single_project_container {
 
-                        &>p {
-                            line-height: .875rem;
-                            letter-spacing: .015rem;
-                            font-size: .725rem;
-                        }
+                        .single_project_description_container {
+                            padding: .3rem .5rem;
+                            padding-top: 1.25rem;
+                            justify-content: space-evenly;
 
-                        .single_project_anchors_container {
-                            visibility: hidden;
-                            opacity: 0;
-                            // transition: all .25s ease-in-out;
-                            // transition: all .15s ease-in-out;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: .875rem;
+                                letter-spacing: .015rem;
+                                font-size: .725rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .075rem .65rem;
+                            .single_project_anchors_container {
+                                visibility: hidden;
+                                opacity: 0;
+                                // transition: all .25s ease-in-out;
+                                // transition: all .15s ease-in-out;
+                                transition: all .2s ease-in-out;
 
-                                p {
-                                    font-size: .7rem;
+                                .single_project_website_anchor {
+                                    padding: .075rem .65rem;
+
+                                    p {
+                                        font-size: .7rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: .8rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: .825rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .25rem;
 
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                                    i {
+                                        font-size: .75rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--app-primary-color);
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .25rem;
-
-                                i {
-                                    font-size: .8rem;
-                                }
-
-                                &:hover {
-                                    background-color: var(--app-primary-color);
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -12px;
+                        top: -7px;
+                        gap: .225rem;
+
+                        .single_project_skills_item {
+                            width: 22px;
+                            height: 22px;
+                            padding: .1rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-
-                .single_project_skills_container {
-                    top: -12px;
-                    gap: .275rem;
-
-                    .single_project_skills_item {
-                        width: 22px;
-                        height: 22px;
-                        padding: .1rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -903,95 +985,99 @@ screen and (min-height: 550px) and (max-height: 650px) and (min-width: 600px) {
                 font-size: 2.35rem;
 
                 &::after {
-                    bottom: -40%;
+                    bottom: -35%;
                 }
             }
         }
 
         .projects_content_container {
-            gap: 2rem;
 
             // Single project content
-            .single_project_container_wrapper {
+            .single_project_container_article {
 
-                .single_project_container {
+                h4 {
+                    text-indent: .25rem;
+                    font-size: 1.1rem;
+                    letter-spacing: .05rem;
+                    line-height: 1.25rem;
+                }
 
-                    .single_project_description_container {
-                        padding: .35rem .5rem;
+                .single_project_container_wrapper {
 
-                        h4 {
-                            font-size: 1.1rem;
-                            letter-spacing: .05rem;
-                            line-height: 1.25rem;
-                        }
+                    .single_project_container {
 
-                        &>p {
-                            line-height: 1.05rem;
-                            letter-spacing: .02rem;
-                            font-size: .875rem;
-                        }
+                        .single_project_description_container {
+                            padding: .35rem .5rem;
+                            padding-top: 1.5rem;
 
-                        .single_project_anchors_container {
-                            // gap: 1rem;
-                            visibility: hidden;
-                            opacity: 0;
-                            transition: all .2s ease-in-out;
+                            &>p {
+                                line-height: 1.05rem;
+                                letter-spacing: .02rem;
+                                font-size: .875rem;
+                            }
 
-                            .single_project_website_anchor {
-                                padding: .05rem .85rem;
-                                gap: .35rem;
+                            .single_project_anchors_container {
+                                // gap: 1rem;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .2s ease-in-out;
 
-                                p {
-                                    letter-spacing: .015rem;
-                                    font-size: .85rem;
+                                .single_project_website_anchor {
+                                    padding: .05rem .85rem;
+                                    gap: .35rem;
+
+                                    p {
+                                        letter-spacing: .015rem;
+                                        font-size: .85rem;
+                                    }
+
+                                    p:nth-of-type(2) {
+                                        font-size: 1rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: initial;
+                                    }
                                 }
 
-                                p:nth-of-type(2) {
-                                    font-size: 1.05rem;
-                                }
+                                .single_project_code_anchor {
+                                    padding: .3rem;
 
-                                &:hover {
-                                    background-color: initial;
+                                    i {
+                                        font-size: .925rem;
+                                    }
+
+                                    &:hover {
+                                        background-color: initial;
+                                    }
                                 }
                             }
 
-                            .single_project_code_anchor {
-                                padding: .3rem;
-
-                                i {
-                                    font-size: .975rem;
-                                }
-
-                                &:hover {
-                                    background-color: initial;
+                            &:hover {
+                                .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
+                        }
+                    }
+
+                    .single_project_skills_container {
+                        // top: -12.5px;
+                        gap: .35rem;
+
+                        .single_project_skills_item {
+                            width: 25px;
+                            height: 25px;
+                            padding: .115rem;
                         }
 
                         &:hover {
-                            .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-
-                .single_project_skills_container {
-                    top: -12.5px;
-                    gap: .375rem;
-
-                    .single_project_skills_item {
-                        width: 25px;
-                        height: 25px;
-                        padding: .115rem;
-                    }
-
-                    &:hover {
-                        &+.single_project_container {
-                            .single_project_description_container .single_project_anchors_container {
-                                visibility: visible;
-                                opacity: 1;
+                            &+.single_project_container {
+                                .single_project_description_container .single_project_anchors_container {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
                             }
                         }
                     }

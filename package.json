@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bmigueldev.github.io/portfolio-website",
+  "homepage": "https://bmigueldev.github.io/brunomiguel",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -29,6 +29,7 @@
   },
   "browserslist": {
     "production": [
+      "since 2005",
       ">0.2%",
       "not dead",
       "not op_mini all"

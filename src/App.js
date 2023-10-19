@@ -30,7 +30,7 @@ export default function App() {
             }}
         >
             <Routes location={displayLocation}>
-                <Route path="/portfolio-website" element={<PageLayout />}>
+                <Route path="/brunomiguel" element={<PageLayout />}>
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="projects" element={<Projects />} />
@@ -43,5 +43,7 @@ export default function App() {
 }
 
 // TODO:
-//  - if images take time to load on production, add loading to whole page until all images are loaded and only then allow showing of page to user (unlikely)
-//  - change colors in light mode a good amount to be more readable
+//  - change colors in light mode a good amount to be more readable (and also maybe in dark mode, the intermediate color could be better)
+//  - Deploy
+//  - Check if github pages refresh bug is good
+//  - if images take time to load on production, try to compact all pictures (tinyPNG) and, as last resort, add loading to whole page until all images are loaded and only then allow showing of page to user (unlikely)

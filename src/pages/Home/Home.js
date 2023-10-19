@@ -11,13 +11,14 @@ export default function Home() {
           <h2>Front End Developer</h2>
         </div>
         <h6>I build great user experiences</h6>
-        <Link to='/portfolio-website/about' className={styles.home_about_link_container}>
+        <Link to='/brunomiguel/about' className={styles.home_about_link_container}>
           <h6>More About Me</h6>
           <span>➜</span>
         </Link>
       </div>
       <div className={styles.home_picture_container}>
-        <img src={require('../../assets/images/profile_picture2.png')} alt="" />
+        <img src={require('../../assets/images/profile_picture.png')} alt="" />
+        {/* <img src={require('../../assets/images/Tinyfiedprofile_picture.png')} alt="" /> */}
       </div>
     </main>
   )

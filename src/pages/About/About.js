@@ -25,7 +25,7 @@ export default function About() {
               </a>
             </div>
             <div className={styles.about_description_item}>
-              <Link to='/portfolio-website/projects' className={styles.description_item_text}>
+              <Link to='/brunomiguel/projects' className={styles.description_item_text}>
                 <p className={styles.description_item_text_title}>8+</p>
                 <p className={styles.description_item_text_explanation}>
                   Projects Completed
@@ -34,14 +34,14 @@ export default function About() {
             </div>
             <div className={styles.about_description_item}>
               <a href="#about_skills" className={styles.description_item_text}>
-                <p className={styles.description_item_text_title}>14+</p>
+                <p className={styles.description_item_text_title}>19+</p>
                 <p className={styles.description_item_text_explanation}>
                   Technologies Used
                 </p>
               </a>
             </div>
           </div>
-          <a href={require('../../assets/files/brunos_resume.pdf')} target='_blank' rel='noreferrer' className={styles.about_description_btn}>
+          <a href={require('../../assets/files/Brunos_Resume.pdf')} target='_blank' rel='noreferrer' className={styles.about_description_btn}>
             <span className={styles.btn_text}>Download CV</span>
             <span className={styles.btn_icon}><i className="fas fa-download"></i></span>
           </a>
@@ -50,9 +50,9 @@ export default function About() {
           <h3 className={styles.about_skills_title}>My Skills</h3>
           <div className={styles.about_skills_technologies}>
             {
-              SkillsData.map(skill => <div key={skill.id} className={styles.skills_technology_container} title={skill.title === "RTL" ? 'React Testing Library' : ''}>
+              SkillsData.map(skill => <div key={skill.id} className={styles.skills_technology_container} title={skill.title === "RTL" ? 'React Testing Library' : skill.title}>
                 <p>{skill.title}</p>
-                <img src={skill.image} alt={skill.title} />
+                <img src={skill.image} alt={skill.title} className={skill.title==='MongoDB' ? styles.skill_img_rounded_border : ''} />
               </div>)
             }
           </div>

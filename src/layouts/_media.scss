@@ -79,7 +79,7 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
                 align-items: center;
                 justify-content: flex-end;
                 gap: 1.5rem;
-                //position: relative;
+                position: relative;
                 //margin-right: 0rem;
                 width: 35%;
 
@@ -148,50 +148,23 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
 
                 .navbar_burger_menu_container {
                     position: absolute;
-                    // left: 12%;
-                    // top: -65%;
-                    top: 0;
-                    right: -0.5%;
-                    height : fit-content;
-                    width : 36%;
-                    max-width: 105px;
+                    right: -27.5%;
+                    top: 105%;
                     opacity: 1;
                     visibility: visible;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    gap: .65rem;
-                    padding: 1.375rem .5rem .75rem .5rem;
+                    gap: .375rem;
+                    padding: .5rem 1.25rem .5rem 1.325rem;
                     transition: all .25s ease;
                     background-color: var(--app-intermediate-color);
-                    border-radius: .5rem;
+                    border-radius: .375rem;
+                    border: .01rem solid var(--app-primary-color);
                     z-index: 1;
 
-                    .burger_menu_button_close {
-                        padding: .2rem;
-                        width: 1.15rem;
-                        height: 1.15rem;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: 2.5%;
-                        left: 2.5%;
-
-                        i {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: .8rem;
-                            color: var(--app-bg-color2-transparent);
-                        }
-                    }
-
                     &.burger_menu_closed {
-                        // left: 123%;
-                        // top: -65%;
-                        top: 0;
-                        right: -36.5%;
+                        right: -80%;
                         opacity: 0;
                         visibility: hidden;
                         background-color: var(--app-intermediate-color);
@@ -202,17 +175,16 @@ screen and (min-width: 400px) and (max-width: 450px) and (min-height: 350px) and
                         display: flex;
                         justify-content: flex-start;
                         color: var(--app-primary-color-transparent);
-                        padding: .15rem .35rem;
-                        font-size: .7rem;
+                        padding: .125rem .5rem;
+                        font-size: .785rem;
                         font-weight: 700;
-                        //width: unset;
                         transition: all .125s ease;
                     }
 
                     .navbar_link_active {
                         color: var(--app-primary-color);
-                        font-size: .8rem;
-                        translate: -22.5% 0;
+                        font-size: .85rem;
+                        translate: -15% 0;
                         font-weight: 900;
                     }
                 }
@@ -346,7 +318,7 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
                 align-items: center;
                 justify-content: flex-end;
                 gap: 1.65rem;
-                //position: relative;
+                position: relative;
                 //margin-right: 0rem;
                 width: 35%;
 
@@ -415,51 +387,23 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
 
                 .navbar_burger_menu_container {
                     position: absolute;
-                    //left: 14%;
-                    right: -.5%;
-                    //top: -65%;
-                    top: 0;
-                    height : fit-content;
-                    //width : 110%;
-                    width: 36%;
-                    max-width: 115px;
+                    right: -29.5%;
+                    top: 105%;
                     opacity: 1;
                     visibility: visible;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    gap: .65rem;
-                    padding: 1.375rem .5rem .75rem .5rem;
+                    gap: .385rem;
+                    padding: .5rem 1.3rem .5rem 1.375rem;
                     transition: all .25s ease;
                     background-color: var(--app-intermediate-color);
-                    border-radius: .5rem;
+                    border-radius: .375rem;
+                    border: .01rem solid var(--app-primary-color);
                     z-index: 1;
 
-                    .burger_menu_button_close {
-                        padding: .2rem;
-                        width: 1.25rem;
-                        height: 1.25rem;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: 2.5%;
-                        left: 2.5%;
-
-                        i {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: .9rem;
-                            color: var(--app-bg-color2-transparent);
-                        }
-                    }
-
                     &.burger_menu_closed {
-                        //left: 125%;
-                        right: -36.5%;
-                        //top: -65%;
-                        top: 0;
+                        right: -80%;
                         opacity: 0;
                         visibility: hidden;
                         background-color: var(--app-intermediate-color);
@@ -470,17 +414,16 @@ screen and (min-width: 450px) and (max-width: 500px) and (min-height: 450px) and
                         display: flex;
                         justify-content: flex-start;
                         color: var(--app-primary-color-transparent);
-                        padding: .15rem .35rem;
-                        font-size: .75rem;
+                        padding: .125rem .5rem;
+                        font-size: .8rem;
                         font-weight: 700;
-                        //width: unset;
                         transition: all .125s ease;
                     }
 
                     .navbar_link_active {
                         color: var(--app-primary-color);
-                        font-size: .85rem;
-                        translate: -22.5% 0;
+                        font-size: .9rem;
+                        translate: -15% 0;
                         font-weight: 900;
                     }
                 }
@@ -609,7 +552,7 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                 align-items: center;
                 justify-content: flex-end;
                 gap: 2rem;
-                //position: relative;
+                position: relative;
                 width: 35%;
 
                 // Dark mode content
@@ -677,47 +620,23 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
 
                 .navbar_burger_menu_container {
                     position: absolute;
-                    right: -.5%;
-                    top: 0;
-                    height : fit-content;
-                    width: 36%;
-                    max-width: 128px;
+                    right: -29.5%;
+                    top: 105%;
                     opacity: 1;
                     visibility: visible;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    gap: .75rem;
-                    padding: .75rem;
-                    padding-top: 1.5rem;
+                    gap: .4rem;
+                    padding: .55rem 1.4rem .55rem 1.475rem;
                     transition: all .25s ease;
                     background-color: var(--app-intermediate-color);
-                    border-radius: .5rem;
+                    border-radius: .375rem;
+                    border: .01rem solid var(--app-primary-color);
                     z-index: 1;
 
-                    .burger_menu_button_close {
-                        padding: .25rem;
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: 3.5%;
-                        left: 3.5%;
-
-                        i {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: 1.1rem;
-                            color: var(--app-bg-color2-transparent);
-                        }
-                    }
-
                     &.burger_menu_closed {
-                        right: -36.5%;
-                        top: 0;
+                        right: -80%;
                         opacity: 0;
                         visibility: hidden;
                         background-color: var(--app-intermediate-color);
@@ -728,17 +647,16 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                         display: flex;
                         justify-content: flex-start;
                         color: var(--app-primary-color-transparent);
-                        padding: .15rem .35rem;
-                        font-size: .8rem;
+                        padding: .125rem .5rem;
+                        font-size: .85rem;
                         font-weight: 700;
-                        //width: 62.5%;
                         transition: all .125s ease;
                     }
 
                     .navbar_link_active {
                         color: var(--app-primary-color);
-                        font-size: .9rem;
-                        translate: -25% 0;
+                        font-size: .95rem;
+                        translate: -15% 0;
                         font-weight: 900;
                     }
                 }
@@ -931,45 +849,24 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
 
                 .navbar_burger_menu_container {
                     position: absolute;
-                    left: 12%;
-                    top: -65%;
-                    height : fit-content;
-                    width : 110%;
+                    right: -27.5%;
+                    top: 105%;
                     opacity: 1;
                     visibility: visible;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    gap: .5rem;
-                    padding: 1.15rem .5rem .5rem .5rem;
+                    gap: .35rem;
+                    padding: .5rem 1.25rem .5rem 1.325rem;
                     transition: all .25s ease;
                     background-color: var(--app-intermediate-color);
-                    border-radius: .5rem;
+                    border-radius: .375rem;
+                    border: .01rem solid var(--app-primary-color);
                     z-index: 1;
 
-                    .burger_menu_button_close {
-                        padding: .2rem;
-                        width: 1.15rem;
-                        height: 1.15rem;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: 2.5%;
-                        left: 2.5%;
-
-                        i {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: .8rem;
-                            color: var(--app-bg-color2-transparent);
-                        }
-                    }
-
                     &.burger_menu_closed {
-                        left: 123%;
-                        top: -65%;
+                        right: -80%;
+                        top: 105%;
                         opacity: 0;
                         visibility: hidden;
                         background-color: var(--app-intermediate-color);
@@ -980,16 +877,16 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
                         display: flex;
                         justify-content: flex-start;
                         color: var(--app-primary-color-transparent);
-                        padding: .15rem .35rem;
-                        font-size: .65rem;
+                        padding: .125rem .5rem;
+                        font-size: .785rem;
                         font-weight: 700;
                         transition: all .125s ease;
                     }
 
                     .navbar_link_active {
                         color: var(--app-primary-color);
-                        font-size: .75rem;
-                        translate: -22.5% 0;
+                        font-size: .85rem;
+                        translate: -15% 0;
                         font-weight: 900;
                     }
                 }
