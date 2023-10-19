@@ -41,7 +41,7 @@ export default function About() {
               </a>
             </div>
           </div>
-          <a href={require('../../assets/files/Brunos_Resume.pdf')} target='_blank' rel='noreferrer' className={styles.about_description_btn}>
+          <a href={require('../../assets/files/brunos_resume.pdf')} target='_blank' rel='noreferrer' className={styles.about_description_btn}>
             <span className={styles.btn_text}>Download CV</span>
             <span className={styles.btn_icon}><i className="fas fa-download"></i></span>
           </a>
