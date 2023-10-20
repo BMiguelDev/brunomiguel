@@ -41,7 +41,3 @@ export default function App() {
         </div>
     );
 }
-
-// TODO:
-//  - if images take time to load on production (Chrome lighthouse), try to compact all pictures (tinyPNG) and, as last resort, add loading to whole page until all images are loaded and only then allow showing of page to user (unlikely)
-//  - fix app's icon not showing on browser

@@ -18,7 +18,6 @@ export default function Home() {
       </div>
       <div className={styles.home_picture_container}>
         <img src={require('../../assets/images/profile_picture.png')} alt="" />
-        {/* <img src={require('../../assets/images/Tinyfiedprofile_picture.png')} alt="" /> */}
       </div>
     </main>
   )
