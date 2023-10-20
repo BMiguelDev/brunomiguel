@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brunomiguel/static/css/main.215619ca.css",
-    "main.js": "/brunomiguel/static/js/main.62f9fbb2.js",
+    "main.js": "/brunomiguel/static/js/main.04f58ef0.js",
     "static/media/profile_picture.png": "/brunomiguel/static/media/profile_picture.07be31974a6b37bc5770.png",
     "static/media/background.jpg": "/brunomiguel/static/media/background.224954a3670aca0f0fea.jpg",
     "static/media/sim-rec-net-thumbnail-dark.png": "/brunomiguel/static/media/sim-rec-net-thumbnail-dark.e2376983f8ea40ea9b33.png",
@@ -31,10 +31,10 @@
     "index.html": "/brunomiguel/index.html",
     "static/media/MongoDB_logo.webp": "/brunomiguel/static/media/MongoDB_logo.09561058dacb767aeeb4.webp",
     "main.215619ca.css.map": "/brunomiguel/static/css/main.215619ca.css.map",
-    "main.62f9fbb2.js.map": "/brunomiguel/static/js/main.62f9fbb2.js.map"
+    "main.04f58ef0.js.map": "/brunomiguel/static/js/main.04f58ef0.js.map"
   },
   "entrypoints": [
     "static/css/main.215619ca.css",
-    "static/js/main.62f9fbb2.js"
+    "static/js/main.04f58ef0.js"
   ]
 }
