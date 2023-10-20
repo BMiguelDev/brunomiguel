@@ -14,7 +14,7 @@ export default function Footer() {
         <p>Copyright © {currentYear} Bruno Miguel</p>
       </div>
       <div className={styles.footer_icon_container}>
-        <a href="https://github.com/BMiguelDev/portfolio-website" target="_blank" rel="noreferrer">
+        <a href="hhttps://github.com/BMiguelDev/brunomiguel" target="_blank" rel="noreferrer">
           <i className="fa-solid fa-code"></i>
         </a>
         <a href="https://github.com/BMiguelDev" target="_blank" rel="noreferrer">

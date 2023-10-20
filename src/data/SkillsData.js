@@ -27,7 +27,7 @@ const SkillsData = [
     {   
         id: 6,
         title: "Redux Toolkit",
-        image: require("../assets/images/redux_toolkit.png")
+        image: require("../assets/images/redux_toolkit.webp")
     },
     {   
         id: 7,

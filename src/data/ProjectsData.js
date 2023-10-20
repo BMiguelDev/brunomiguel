@@ -11,7 +11,7 @@ const ProjectsData = [
         mainSkills: [
             { title: "React", image: require('../assets/images/react_logo.svg.png') },
             { title: "Typescript", image: require('../assets/images/typescript_logo.png') },
-            { title: "Redux Toolkit", image: require('../assets/images/redux_toolkit.png') },
+            { title: "Redux Toolkit", image: require('../assets/images/redux_toolkit.webp') },
             { title: "Styled Components", image: require('../assets/images/styled_components_logo.png') },
             { title: "NodeJS", image: require('../assets/images/nodejs_icon.png') },
             { title: "ExpressJS", image: require('../assets/images/expressjs_logo.png') },
@@ -76,7 +76,7 @@ const ProjectsData = [
         mainSkills: [
             { title: "React", image: require('../assets/images/react_logo.svg.png') },
             { title: "Typescript", image: require('../assets/images/typescript_logo.png') },
-            { title: "Redux Toolkit", image: require('../assets/images/redux_toolkit.png') },
+            { title: "Redux Toolkit", image: require('../assets/images/redux_toolkit.webp') },
             { title: "Sass", image: require('../assets/images/sass_logo.png') },
         ]
     },
