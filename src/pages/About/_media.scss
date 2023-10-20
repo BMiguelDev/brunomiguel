@@ -396,10 +396,10 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
 
     // About content
     .about_container {
-        margin: auto 17.5%;
+        margin: auto 16.5%;
         margin-bottom: 7.5%;
         height: 77.5%;
-        gap: 1.5rem;
+        gap: 2rem;
         margin-top: 3%;
 
         .about_main_title {
@@ -420,7 +420,7 @@ screen and (min-width: 550px) and (max-width: 600px) and (min-height: 550px) and
             padding-top: 0rem;
 
             .about_description {
-                gap: 1.35rem;
+                gap: 1.5rem;
 
                 .about_description_text {
 

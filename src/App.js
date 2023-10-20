@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { /* BrowserRouter,*/ Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./App.scss";
 import PageLayout from "./layouts/PageLayout";
