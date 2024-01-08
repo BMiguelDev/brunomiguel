@@ -11,7 +11,7 @@ export default function About() {
       <div className={styles.about_content}>
         <div className={styles.about_description}>
           <div className={styles.about_description_text}>
-            <p>I'm a <span>Software Engineer</span>, specializing in <span>Front End Web Development</span>, based in Porto, Portugal.</p>
+            <p>I'm a <span>Software Engineer</span>, specializing in <span>Frontend Web Development</span>, based in Porto, Portugal.</p>
             <p>I create great user experiences and my skillset is mainly focused on <span>React</span>, and that's the area I'm interested in the most. I focus on adaptability; if I don't know it, I can learn it.</p>
             <p>In the past, I have also worked in full stack development and <a href="https://repositorio-aberto.up.pt/handle/10216/136558" target="_blank" rel="noreferrer">data science projects</a>.</p>
           </div>
@@ -68,7 +68,7 @@ export default function About() {
             <p className={styles.timeline_duration}>2022 - 2023</p>
             <h5>Typescrit, React, Redux, Testing <span>courses</span></h5>
             <p className={styles.timeline_description}>
-              <span>Front End specialization courses</span> in the areas of <span>Typescript, React, Redux, and Testing (Unit, Integration, and End to End)
+              <span>Frontend specialization courses</span> in the areas of <span>Typescript, React, Redux, and Testing (Unit, Integration, and End to End)
               </span> and development of projects using these technologies
             </p>
           </div>

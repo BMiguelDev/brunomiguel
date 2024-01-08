@@ -8,7 +8,7 @@ export default function Home() {
         <h4>Hi, I'm Bruno Miguel</h4>
         <div className={styles.prof_titles_container}>
           <h2>Software Engineer,</h2>
-          <h2>Front End Developer</h2>
+          <h2>Frontend Developer</h2>
         </div>
         <h6>I build great user experiences</h6>
         <Link to='/brunomiguel/about' className={styles.home_about_link_container}>
