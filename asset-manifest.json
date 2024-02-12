@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/brunomiguel/static/css/main.215619ca.css",
-    "main.js": "/brunomiguel/static/js/main.d9e9d4ad.js",
+    "main.js": "/brunomiguel/static/js/main.4d32a03d.js",
     "static/media/profile_picture.png": "/brunomiguel/static/media/profile_picture.07be31974a6b37bc5770.png",
     "static/media/background.jpg": "/brunomiguel/static/media/background.224954a3670aca0f0fea.jpg",
     "static/media/sim-rec-net-thumbnail-dark.png": "/brunomiguel/static/media/sim-rec-net-thumbnail-dark.e2376983f8ea40ea9b33.png",
-    "static/media/brunos_resume.pdf": "/brunomiguel/static/media/brunos_resume.c9709230cfb856b3bb3c.pdf",
+    "static/media/brunos_resume.pdf": "/brunomiguel/static/media/brunos_resume.45c6ffc1a2af9177e11d.pdf",
     "static/media/sim-rec-net-thumbnail-light.png": "/brunomiguel/static/media/sim-rec-net-thumbnail-light.0ebfdca9d1d712e54823.png",
     "static/media/quizz-challenge-thumbnail-dark.png": "/brunomiguel/static/media/quizz-challenge-thumbnail-dark.9aff9517670273ea0dfe.png",
     "static/media/buzz-circle-thumbnail-light.png": "/brunomiguel/static/media/buzz-circle-thumbnail-light.94c6c2d8d73167731e3a.png",
@@ -31,10 +31,10 @@
     "index.html": "/brunomiguel/index.html",
     "static/media/MongoDB_logo.webp": "/brunomiguel/static/media/MongoDB_logo.09561058dacb767aeeb4.webp",
     "main.215619ca.css.map": "/brunomiguel/static/css/main.215619ca.css.map",
-    "main.d9e9d4ad.js.map": "/brunomiguel/static/js/main.d9e9d4ad.js.map"
+    "main.4d32a03d.js.map": "/brunomiguel/static/js/main.4d32a03d.js.map"
   },
   "entrypoints": [
     "static/css/main.215619ca.css",
-    "static/js/main.d9e9d4ad.js"
+    "static/js/main.4d32a03d.js"
   ]
 }
