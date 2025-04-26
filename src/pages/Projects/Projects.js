@@ -9,6 +9,7 @@ export default function Projects() {
         <h2>Projects</h2>
       </div>
       <div className={styles.projects_content_container}>
+        <h5 className={styles.projects_description}>Personal projects reflecting my solid foundational skills, though my knowledge and expertise have greatly improved since their completion.</h5>
         {
           ProjectsData.map(project => <SingleProject key={project.id} data={project} styles={styles} />)
         }

@@ -1,9 +1,9 @@
 // Projects content
 .projects_container {
-    margin: auto 15%;
+    margin: auto 14%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3.75rem;
     margin-bottom: 1.5rem;
 
     .projects_main_title {
@@ -44,6 +44,14 @@
         row-gap: 2rem;
         position: relative;
 
+        h5.projects_description {
+            margin: 1.15rem 0;
+            font-size: 1.2rem;
+            letter-spacing: .025rem;
+            color: var(--app-intermediate-color);
+            text-align: center;
+            transition: all .2s ease-in-out;
+        }
 
         // Single project content
         .single_project_container_article {
@@ -57,7 +65,7 @@
                 margin: 0;
                 font-size: 1.175rem;
                 text-indent: .5rem;
-                letter-spacing: .05rem;           
+                letter-spacing: .05rem;
             }
 
             .single_project_container_wrapper {
@@ -99,7 +107,7 @@
                         padding-top: 1.75rem;
                         text-align: center;
                         position: relative;
-                        
+
                         &>p {
                             margin: 0;
                             line-height: 1.2rem;

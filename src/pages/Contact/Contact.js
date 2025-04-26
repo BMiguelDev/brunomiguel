@@ -52,11 +52,11 @@ export default function Contact() {
             </div>
             <div className={styles.contact_content_container}>
                 <div className={styles.contact_description}>
-                    <p>I'm always looking for new oppportunities and my inbox is always open.</p>
-                    <p>Let me know if you have any questions.</p>
+                    <p>I'm constantly seeking new challenges and innovative projects.</p>
+                    <p>My inbox is open for opportunities and collaborations.</p>
                     <a href="mailto:bmiguelpro@outlook.com">
                         <p>Say Hello</p>
-                        <i className="fa-regular fa-envelope"></i>    
+                        <i className="fa-regular fa-envelope"></i>
                     </a>
                 </div>
                 <div className={styles.contact_alternatives}>

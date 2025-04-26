@@ -1,6 +1,6 @@
 // Contact content
 .contact_container {
-    margin: auto 15%;
+    margin: auto 14%;
     color: var(--app-primary-color);
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
                     &::before {
                         opacity: 1;
                         translate: 0% 0%;
-                    }  
+                    }
                 }
             }
         }
@@ -113,7 +113,7 @@
             // background-color: var(--app-primary-color-transparent3);
             // border: .01rem solid var(--app-secondary-color);
             // border-radius: .5rem;
-            
+
             p {
                 margin: 0;
                 font-size: 1.1rem;
@@ -135,7 +135,7 @@
 
                     p {
                         font-size: 1.3rem;
-                        letter-spacing: .045rem;       
+                        letter-spacing: .045rem;
                         color: inherit;
                     }
 
