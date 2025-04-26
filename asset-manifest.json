@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/brunomiguel/static/css/main.215619ca.css",
-    "main.js": "/brunomiguel/static/js/main.4d32a03d.js",
+    "main.css": "/brunomiguel/static/css/main.10f74d9d.css",
+    "main.js": "/brunomiguel/static/js/main.b09e79ce.js",
     "static/media/profile_picture.png": "/brunomiguel/static/media/profile_picture.07be31974a6b37bc5770.png",
     "static/media/background.jpg": "/brunomiguel/static/media/background.224954a3670aca0f0fea.jpg",
     "static/media/sim-rec-net-thumbnail-dark.png": "/brunomiguel/static/media/sim-rec-net-thumbnail-dark.e2376983f8ea40ea9b33.png",
-    "static/media/brunos_resume.pdf": "/brunomiguel/static/media/brunos_resume.45c6ffc1a2af9177e11d.pdf",
     "static/media/sim-rec-net-thumbnail-light.png": "/brunomiguel/static/media/sim-rec-net-thumbnail-light.0ebfdca9d1d712e54823.png",
     "static/media/quizz-challenge-thumbnail-dark.png": "/brunomiguel/static/media/quizz-challenge-thumbnail-dark.9aff9517670273ea0dfe.png",
     "static/media/buzz-circle-thumbnail-light.png": "/brunomiguel/static/media/buzz-circle-thumbnail-light.94c6c2d8d73167731e3a.png",
@@ -17,6 +16,7 @@
     "static/media/404.webp": "/brunomiguel/static/media/404.8b39f5785971d693cbad.webp",
     "static/media/shopping-cart-thumbnail-light.png": "/brunomiguel/static/media/shopping-cart-thumbnail-light.379f108fe9788bfe98f7.png",
     "static/media/sql_logo.png": "/brunomiguel/static/media/sql_logo.74caf86286483f9be2fc.png",
+    "static/media/nextjs-icon.png": "/brunomiguel/static/media/nextjs-icon.49309b4c7ade3b6b9c1a.png",
     "static/media/webpack_logo.png": "/brunomiguel/static/media/webpack_logo.8579e61798eeaa9d6b8f.png",
     "static/media/wordle-clone-thumbnail-dark.png": "/brunomiguel/static/media/wordle-clone-thumbnail-dark.27eaa1e5f7472cc0a434.png",
     "static/media/wordle-clone-thumbnail-light.png": "/brunomiguel/static/media/wordle-clone-thumbnail-light.290b6477d0414c14eaaf.png",
@@ -24,17 +24,19 @@
     "static/media/css_logo.png": "/brunomiguel/static/media/css_logo.7725520539c26cebb7e3.png",
     "static/media/typescript_logo.png": "/brunomiguel/static/media/typescript_logo.e36952fcf2d418f31f4e.png",
     "static/media/cypress_logo1.png": "/brunomiguel/static/media/cypress_logo1.48a63b0717c09811e857.png",
+    "static/media/Python_logo.webp": "/brunomiguel/static/media/Python_logo.d7e51f27ee9bb081cea7.webp",
     "static/media/react_logo.svg.png": "/brunomiguel/static/media/react_logo.svg.a113f338664df03d96ad.png",
     "static/media/javascript_logo2.png": "/brunomiguel/static/media/javascript_logo2.266bd9fb2663dcc057b4.png",
     "static/media/styled_components_logo.png": "/brunomiguel/static/media/styled_components_logo.02c51daafb90de89eda0.png",
     "static/media/redux_toolkit.webp": "/brunomiguel/static/media/redux_toolkit.2dcbae42f073b648d3ef.webp",
+    "static/media/nextjs_icon_dark.webp": "/brunomiguel/static/media/nextjs_icon_dark.3f6207124d1d194fde94.webp",
     "index.html": "/brunomiguel/index.html",
     "static/media/MongoDB_logo.webp": "/brunomiguel/static/media/MongoDB_logo.09561058dacb767aeeb4.webp",
-    "main.215619ca.css.map": "/brunomiguel/static/css/main.215619ca.css.map",
-    "main.4d32a03d.js.map": "/brunomiguel/static/js/main.4d32a03d.js.map"
+    "main.10f74d9d.css.map": "/brunomiguel/static/css/main.10f74d9d.css.map",
+    "main.b09e79ce.js.map": "/brunomiguel/static/js/main.b09e79ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.215619ca.css",
-    "static/js/main.4d32a03d.js"
+    "static/css/main.10f74d9d.css",
+    "static/js/main.b09e79ce.js"
   ]
 }
