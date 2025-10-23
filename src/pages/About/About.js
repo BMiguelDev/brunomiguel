@@ -22,7 +22,7 @@ export default function About() {
                     </div>
                     <div className={styles.about_description_items_container}>
                         <div className={styles.about_description_item}>
-                            <a href="#about_timeline" className={styles.description_item_text}>
+                            <a href="#about_timeline_masters" className={styles.description_item_text}>
                                 <p className={styles.description_item_text_title}>B.S. + M.S.</p>
                                 <p className={styles.description_item_text_explanation}>
                                     Informatics Engineering
@@ -46,11 +46,10 @@ export default function About() {
                             </a>
                         </div>
                     </div>
-                    {/* TODO: Uncomment this once updated CV/Resume is ready */}
-                    {/* <a href={require('../../assets/files/brunos_resume.pdf')} target='_blank' rel='noreferrer' className={styles.about_description_btn}>
+                    <a href={require('../../assets/files/brunos_resume.pdf')} target='_blank' rel='noreferrer' className={styles.about_description_btn}>
                         <span className={styles.btn_text}>Download CV</span>
                         <span className={styles.btn_icon}><i className="fas fa-download"></i></span>
-                    </a> */}
+                    </a>
                 </div>
                 <div className={styles.about_skills} id="about_skills">
                     <h3 className={styles.about_skills_title}>My Skills</h3>
@@ -78,10 +77,13 @@ export default function About() {
                                 <h5>Intermediate Full Stack Engineer<span className={styles.flex}>Controlar - Innovating Industry</span></h5>
                                 <ul className={styles.timeline_description}>
                                     <li>
-                                        As a Full Stack Engineer, directed the entire project management lifecycle, from <span>requirements engineering</span> and <span>system architecture</span> to <u>planning</u>, <u>implementation</u>, and <u>deployment</u> of frontend and backend applications. Collaborated with <u>cross-functional teams</u> to ensure alignment with business goals and user requirements.
+                                        As a Full Stack Engineer, directed the entire project management lifecycle, from <span>requirements engineering</span> and <span>system architecture</span> to <u>planning</u>, <u>implementation</u>, and <u>deployment</u> of frontend and backend applications. Collaborated with <u>cross-functional teams</u> to meet business goals and user requirements.
                                     </li>
                                     <li>
-                                        Planned and <span>supervised internship programs</span>, including documentation, overseeing technical tasks, and <u>mentoring to improve intern skills</u>.
+                                        Implemented a reusable <span>TypeScript React library</span> — deployed across all internal applications to improve <u>code scalability</u> and accelerate <u>feature development</u> — including <span>customizable UI components</span> with <u>full accessibility support</u> and a <span>JWT authentication module</span> using React hooks and the Context API.
+                                    </li>
+                                    <li>
+                                        <span>Supervised internship programs</span> and <span>mentored junior team members</span>, managing documentation, technical tasks, and skills development.
                                     </li>
                                 </ul>
                             </div>
@@ -94,9 +96,6 @@ export default function About() {
                                 <ul className={styles.timeline_description}>
                                     <li>
                                         As part of an <span>Agile web development</span> team, architected and implemented a resource management application using <span>TypeScript</span> and <span>React</span>, providing real-time search and visualization of project and equipment data through dynamic dashboards and charts. Developed interactive components to automate tasks, provide CRUD functionalities for complex resources, and compute valuable business KPIs. Achieved a <u>centralized</u> tool adopted company-wide, <u>increasing user engagement by 62%</u> and reducing manual work.
-                                    </li>
-                                    <li>
-                                        Implemented a reusable <span>TypeScript React UI component library</span> with full accessibility support and dynamic customization, applicable across all internal applications, resulting in <u>greater code scalability</u> and <u>faster development</u> of new functionalities.
                                     </li>
                                     <li>
                                         Designed and implemented two central backend <span>REST APIs</span> using <span>Node.js</span> and <span>Flask (Python)</span>, fostering the adoption of a <span>Model-View-Controller architecture</span>, and leading to the migration of all existing backend services into <u>centralized APIs</u>, resulting in an upgraded modular infrastructure.
@@ -171,14 +170,14 @@ export default function About() {
                                     <span>Frontend specialization</span> course in <span>React</span>, by <u>Bob Ziroll</u> (Coursera).
                                 </p>
                             </div>
-                            <div className={styles.about_timeline_item}>
+                            <div className={styles.about_timeline_item} id="about_timeline_masters">
                                 <div className={styles.timeline_icon}>
                                     <i className="fa-solid fa-graduation-cap"></i>
                                 </div>
                                 <p className={styles.timeline_duration}>2015 - 2021</p>
-                                <h5>B.S. + M.S. <span>in Informatics and Computing Engineering</span></h5>
+                                <h5>B.S. and M.S. <span>in Informatics and Computing Engineering</span></h5>
                                 <p className={styles.timeline_description}>
-                                    <span>Bachelor's + Master's</span> degree in <span>Informatics and Computing Engineering</span>, completed at the <u>Faculty of Engineering of the
+                                    <span>Bachelor's and Master's</span> degree in <span>Informatics and Computing Engineering</span>, completed at the <u>Faculty of Engineering of the
                                         University of Porto (FEUP)</u>, Portugal.
                                 </p>
                             </div>
