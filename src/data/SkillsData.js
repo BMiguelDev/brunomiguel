@@ -47,68 +47,78 @@ const SkillsData = [
     },
     {
         id: 10,
+        title: "Ruby",
+        image: require("../assets/images/Ruby_logo.svg.png")
+    },
+    {
+        id: 11,
+        title: "Ruby on Rails",
+        image: require("../assets/images/rubyOnRails_logo.svg.png")
+    },
+    {
+        id: 12,
         title: "SQL",
         image: require("../assets/images/sql_logo.png")
     },
     {
-        id: 11,
+        id: 13,
         title: "MongoDB",
         image: require("../assets/images/MongoDB_logo.webp")
     },
     {
-        id: 12,
+        id: 14,
         title: "Git",
         image: require("../assets/images/git_logo.svg.png")
     },
     {
-        id: 13,
+        id: 15,
         title: "HTML",
         image: require("../assets/images/html_logo.png")
     },
     {
-        id: 14,
+        id: 16,
         title: "CSS",
         image: require("../assets/images/css_logo.png")
     },
     {
-        id: 15,
+        id: 17,
         title: "SASS",
         image: require("../assets/images/sass_logo.png")
     },
     {
-        id: 16,
+        id: 18,
         title: "Styled Components",
         image: require("../assets/images/styled_components_logo.png")
     },
     {
-        id: 17,
+        id: 19,
         title: "JWT",
         hoverTitle: "JSON Web Tokens",
         image: require("../assets/images/JWT_logo.png")
     },
     {
-        id: 18,
+        id: 20,
         title: "RTL",
         hoverTitle: "React Testing Library",
         image: require("../assets/images/react_testing_library_logo.png")
     },
     {
-        id: 19,
+        id: 21,
         title: "Jest",
         image: require("../assets/images/jest_logo.png")
     },
     {
-        id: 20,
+        id: 22,
         title: "Cypress",
         image: require("../assets/images/cypress_logo1.png")
     },
     {
-        id: 21,
+        id: 23,
         title: "Storybook",
         image: require("../assets/images/storybook_logo.png")
     },
     {
-        id: 22,
+        id: 24,
         title: "Webpack",
         image: require("../assets/images/webpack_logo.png")
     }

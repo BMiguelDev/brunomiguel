@@ -17,8 +17,8 @@ export default function About() {
                 <div className={styles.about_description}>
                     <div className={styles.about_description_text}>
                         <p>I'm a <span>Software Engineer</span> specialized in <span>Frontend Web Development</span>, based in Porto, Portugal.</p>
-                        <p>With over 2 years of professional experience, I excel in creating seamless user experiences with a strong emphasis on <span>TypeScript</span> and <span>React</span>. I'm results-oriented and committed to continuous learning, growth, and teamwork. Adaptability is one of my core strengths; if I don't know it, I can learn it.</p>
-                        <p>My work experience includes <a href="#about_full_stack_experience">Full Stack Engineering</a> and <a href="https://repositorio-aberto.up.pt/handle/10216/136558" target="_blank" rel="noreferrer">Data Science Research</a>.</p>
+                        <p>With over 3 years of professional experience, I excel in creating seamless user experiences with a strong emphasis on <span>TypeScript</span> and <span>React</span>. I'm results-oriented and committed to continuous learning, growth, and teamwork. Adaptability is one of my core strengths; if I don't know it, I can learn it.</p>
+                        <p>My work experience includes <a href="#about_frontend_experience">Frontend Engineering</a>, <a href="#about_full_stack_experience">Full Stack Engineering</a>, and <a href="https://repositorio-aberto.up.pt/handle/10216/136558" target="_blank" rel="noreferrer">Data Science Research</a>.</p>
                     </div>
                     <div className={styles.about_description_items_container}>
                         <div className={styles.about_description_item}>
@@ -39,7 +39,7 @@ export default function About() {
                         </div>
                         <div className={styles.about_description_item}>
                             <a href="#about_skills" className={styles.description_item_text}>
-                                <p className={styles.description_item_text_title}>22+</p>
+                                <p className={styles.description_item_text_title}>24+</p>
                                 <p className={styles.description_item_text_explanation}>
                                     Technologies Used
                                 </p>
@@ -69,11 +69,20 @@ export default function About() {
                     <div className={styles.about_timeline_column}>
                         <h4 className={styles.about_timeline_subtitle}>Work Experience</h4>
                         <div className={styles.about_timeline_content}>
+                            <div className={styles.about_timeline_item} id="about_frontend_experience">
+                                <div className={styles.timeline_icon}>
+                                    <i className="fa-solid fa-briefcase"></i>
+                                </div>
+                                <p className={styles.timeline_duration}>2026 - Present</p>
+                                <h5>Intermediate Frontend Engineer<span className={styles.flex}>Reachdesk</span></h5>
+                                <ul className={styles.timeline_description}>
+                                </ul>
+                            </div>
                             <div className={styles.about_timeline_item} id="about_full_stack_experience">
                                 <div className={styles.timeline_icon}>
                                     <i className="fa-solid fa-briefcase"></i>
                                 </div>
-                                <p className={styles.timeline_duration}>2025 - Present</p>
+                                <p className={styles.timeline_duration}>2025 - 2026</p>
                                 <h5>Intermediate Full Stack Engineer<span className={styles.flex}>Controlar - Innovating Industry</span></h5>
                                 <ul className={styles.timeline_description}>
                                     <li>
@@ -144,7 +153,7 @@ export default function About() {
                                 <div className={styles.timeline_icon}>
                                     <i className="fa-solid fa-book"></i>
                                 </div>
-                                <p className={styles.timeline_duration}>2025 - Present</p>
+                                <p className={styles.timeline_duration}>2025</p>
                                 <h5>NextJS 15 <span>course</span></h5>
                                 <p className={styles.timeline_description}>
                                     <span>Frontend specialization</span> course in <span>NextJS 15</span>, by <u>Maximilian Schwarzmüller</u> (Udemy).
